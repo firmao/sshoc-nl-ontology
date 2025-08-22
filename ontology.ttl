@@ -1,0 +1,511 @@
+@prefix : <https://w3id.org/dsv-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/dsv-ontology#> .
+
+<https://w3id.org/dsv-ontology> rdf:type owl:Ontology ;
+                                 owl:imports <http://purl.org/NET/c4dm/event.owl#> ,
+                                             <http://purl.org/linked-data/cube> ,
+                                             <http://purl.org/ontology/bibo/> ,
+                                             <http://www.w3.org/2004/02/skos/core#> ,
+                                             <http://www.w3.org/ns/csvw> ,
+                                             <http://xmlns.com/foaf/0.1/> ;
+                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "dsv-ontology" ;
+                                 <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/dsv-ontology#" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/dsv-ontology#hasCategories
+:hasCategories rdf:type owl:AnnotationProperty ;
+               rdfs:comment "Links the dataset or column to a list of categories."@en ;
+               rdfs:label "has categories"@en ;
+               rdfs:range rdf:List ;
+               rdfs:domain :Column ,
+                           :Dataset .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/ontology/bibo/affirmedBy
+<http://purl.org/ontology/bibo/affirmedBy> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://purl.org/ontology/bibo/LegalDecision> ;
+                                           rdfs:range <http://purl.org/ontology/bibo/LegalDecision> ;
+                                           rdfs:comment "A legal decision that affirms a ruling."@en .
+
+
+###  http://purl.org/ontology/bibo/cites
+<http://purl.org/ontology/bibo/cites> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <https://schema.org/SoftwareSourceCode> ;
+                                      rdfs:range <http://purl.org/ontology/bibo/Document> ;
+                                      rdfs:comment "Relates a document to another document that is cited by the first document as reference, comment, review, quotation or for another purpose."@en ;
+                                      rdfs:label "cites"@en .
+
+
+###  http://purl.org/ontology/bibo/contributorList
+<http://purl.org/ontology/bibo/contributorList> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                                rdfs:range rdf:List ;
+                                                rdfs:comment "An ordered list of contributors. Normally, this list is seen as a priority list that order contributors by importance."@en ;
+                                                rdfs:label "list of contributors"@en .
+
+
+###  http://purl.org/ontology/bibo/producer
+<http://purl.org/ontology/bibo/producer> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <http://purl.org/ontology/bibo/AcademicArticle> ,
+                                                     <https://kg.odissei.nl/.well-known/genid/10e3426315eb8581f11c60b44e8c983d> ;
+                                         rdfs:range <http://xmlns.com/foaf/0.1/Agent> ;
+                                         rdfs:comment "Producer of a document or a collection of documents."@en ;
+                                         rdfs:label "producer"@en .
+
+
+###  http://purl.org/ontology/bibo/reversedBy
+<http://purl.org/ontology/bibo/reversedBy> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://purl.org/ontology/bibo/LegalDecision> ;
+                                           rdfs:range <http://purl.org/ontology/bibo/LegalDecision> ;
+                                           rdfs:comment "A legal decision that reverses a ruling."@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/ontology/bibo/uri
+<http://purl.org/ontology/bibo/uri> rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain <https://kg.odissei.nl/.well-known/genid/f2f3e480a6852f58a44a3f662fd220f8> ;
+                                    rdfs:range rdfs:Literal ;
+                                    rdfs:comment "Universal Resource Identifier of a document"@en ;
+                                    rdfs:label "uri"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/NET/c4dm/event.owl#Event
+<http://purl.org/NET/c4dm/event.owl#Event> rdf:type owl:Class .
+
+
+###  http://purl.org/linked-data/cube#ComponentSpecification
+<http://purl.org/linked-data/cube#ComponentSpecification> rdf:type owl:Class .
+
+
+###  http://purl.org/linked-data/cube#DataSet
+<http://purl.org/linked-data/cube#DataSet> rdf:type owl:Class .
+
+
+###  http://purl.org/linked-data/cube#DataStructureDefinition
+<http://purl.org/linked-data/cube#DataStructureDefinition> rdf:type owl:Class .
+
+
+###  http://purl.org/linked-data/cube#DimensionProperty
+<http://purl.org/linked-data/cube#DimensionProperty> rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/bibo/AcademicArticle
+<http://purl.org/ontology/bibo/AcademicArticle> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.org/ontology/bibo/Article> ,
+                                                                <https://terms.codata.org/rdmt/data-paper> ;
+                                                rdfs:comment "A scholarly academic article, typically published in a journal."@en ;
+                                                rdfs:label "Academic Article"@en .
+
+
+###  http://purl.org/ontology/bibo/Article
+<http://purl.org/ontology/bibo/Article> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/ontology/bibo/Document> ;
+                                        rdfs:comment "A written composition in prose, usually nonfiction, on a specific topic, forming an independent part of a book or other publication, as a newspaper or magazine."@en ;
+                                        rdfs:label "Article"@en .
+
+
+###  http://purl.org/ontology/bibo/AudioDocument
+<http://purl.org/ontology/bibo/AudioDocument> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/ontology/bibo/Document> ;
+                                              rdfs:comment "An audio document; aka record."@en ;
+                                              rdfs:label "audio document"@en .
+
+
+###  http://purl.org/ontology/bibo/AudioVisualDocument
+<http://purl.org/ontology/bibo/AudioVisualDocument> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.org/ontology/bibo/Document> ;
+                                                    rdfs:comment "An audio-visual document; film, video, and so forth."@en ;
+                                                    rdfs:label "audio-visual document"@en .
+
+
+###  http://purl.org/ontology/bibo/Bill
+<http://purl.org/ontology/bibo/Bill> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.org/ontology/bibo/Legislation> ;
+                                     rdfs:comment "Draft legislation presented for discussion to a legal body."@en ;
+                                     rdfs:label "Bill"@en .
+
+
+###  http://purl.org/ontology/bibo/Book
+<http://purl.org/ontology/bibo/Book> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.org/ontology/bibo/Document> ;
+                                     rdfs:comment "A written or printed work of fiction or nonfiction, usually on sheets of paper fastened or bound together within covers."@en ;
+                                     rdfs:label "Book"@en .
+
+
+###  http://purl.org/ontology/bibo/BookSection
+<http://purl.org/ontology/bibo/BookSection> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.org/ontology/bibo/DocumentPart> ;
+                                            rdfs:comment "A section of a book."@en ;
+                                            rdfs:label "Book Section"@en .
+
+
+###  http://purl.org/ontology/bibo/Brief
+<http://purl.org/ontology/bibo/Brief> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/ontology/bibo/LegalCaseDocument> ;
+                                      rdfs:comment "A written argument submitted to a court."@en ;
+                                      rdfs:label "Brief"@en .
+
+
+###  http://purl.org/ontology/bibo/Chapter
+<http://purl.org/ontology/bibo/Chapter> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/ontology/bibo/BookSection> ;
+                                        rdfs:comment "A chapter of a book."@en ;
+                                        rdfs:label "Chapter"@en .
+
+
+###  http://purl.org/ontology/bibo/Code
+<http://purl.org/ontology/bibo/Code> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.org/ontology/bibo/Periodical> ;
+                                     rdfs:comment "A collection of statutes."@en ;
+                                     rdfs:label "Code"@en .
+
+
+###  http://purl.org/ontology/bibo/CollectedDocument
+<http://purl.org/ontology/bibo/CollectedDocument> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.org/ontology/bibo/Document> ,
+                                                                  <https://kg.odissei.nl/.well-known/genid/5f487fed82cd9039c3905ee2142c0b7b> ,
+                                                                  <https://kg.odissei.nl/.well-known/genid/79e99055d875c8d7f1971eb856094886> ;
+                                                  rdfs:comment "A document that simultaneously contains other documents."@en ;
+                                                  rdfs:label "Collected Document"@en .
+
+
+###  http://purl.org/ontology/bibo/Collection
+<http://purl.org/ontology/bibo/Collection> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://kg.odissei.nl/.well-known/genid/68de51b157f3af78b55e085ca7ab906d> ;
+                                           rdfs:comment "A collection of Documents or Collections"@en ;
+                                           rdfs:label "Collection"@en .
+
+
+###  http://purl.org/ontology/bibo/Conference
+<http://purl.org/ontology/bibo/Conference> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.org/NET/c4dm/event.owl#Event> ;
+                                           rdfs:comment "A meeting for consultation or discussion."@en ;
+                                           rdfs:label "Conference"@en .
+
+
+###  http://purl.org/ontology/bibo/CourtReporter
+<http://purl.org/ontology/bibo/CourtReporter> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/ontology/bibo/Periodical> ;
+                                              rdfs:comment "A collection of legal cases."@en ;
+                                              rdfs:label "Court Reporter"@en .
+
+
+###  http://purl.org/ontology/bibo/DOI
+<http://purl.org/ontology/bibo/DOI> rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/bibo/DocumentPart
+<http://purl.org/ontology/bibo/DocumentPart> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.org/ontology/bibo/Document> ,
+                                                             <https://kg.odissei.nl/.well-known/genid/f4e35d90090f6cd06b239bbf60f3fbd4> ;
+                                             rdfs:comment "a distinct part of a larger document or collected document."@en ;
+                                             rdfs:label "document part"@en .
+
+
+###  http://purl.org/ontology/bibo/Event
+<http://purl.org/ontology/bibo/Event> rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/bibo/Excerpt
+<http://purl.org/ontology/bibo/Excerpt> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/ontology/bibo/DocumentPart> ;
+                                        rdfs:comment "A passage selected from a larger work."@en ;
+                                        rdfs:label "Excerpt"@en .
+
+
+###  http://purl.org/ontology/bibo/Image
+<http://purl.org/ontology/bibo/Image> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/ontology/bibo/Document> ;
+                                      rdfs:comment "A document that presents visual or diagrammatic information."@en ;
+                                      rdfs:label "Image"@en .
+
+
+###  http://purl.org/ontology/bibo/Issue
+<http://purl.org/ontology/bibo/Issue> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/ontology/bibo/CollectedDocument> ,
+                                                      <https://kg.odissei.nl/.well-known/genid/e513e5068ecb92f8d6d1386e3cd25181> ,
+                                                      <https://kg.odissei.nl/.well-known/genid/f79477d37db71e256beb2d5c250077bd> ;
+                                      rdfs:comment "something that is printed or published and distributed, esp. a given number of a periodical"@en ;
+                                      rdfs:label "Issue"@en .
+
+
+###  http://purl.org/ontology/bibo/LegalCaseDocument
+<http://purl.org/ontology/bibo/LegalCaseDocument> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.org/ontology/bibo/LegalDocument> ;
+                                                  rdfs:comment "A document accompanying a legal case."@en ;
+                                                  rdfs:label "Legal Case Document"@en .
+
+
+###  http://purl.org/ontology/bibo/LegalDecision
+<http://purl.org/ontology/bibo/LegalDecision> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/ontology/bibo/LegalCaseDocument> ;
+                                              rdfs:comment "A document containing an authoritative determination (as a decree or judgment) made after consideration of facts or law."@en ;
+                                              rdfs:label "Decision"@en .
+
+
+###  http://purl.org/ontology/bibo/LegalDocument
+<http://purl.org/ontology/bibo/LegalDocument> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/ontology/bibo/Document> ;
+                                              rdfs:comment "A legal document; for example, a court decision, a brief, and so forth."@en ;
+                                              rdfs:label "Legal Document"@en .
+
+
+###  http://purl.org/ontology/bibo/Legislation
+<http://purl.org/ontology/bibo/Legislation> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.org/ontology/bibo/LegalDocument> ;
+                                            rdfs:comment "A legal document proposing or enacting a law or a group of laws."@en ;
+                                            rdfs:label "Legislation"@en .
+
+
+###  http://purl.org/ontology/bibo/Note
+<http://purl.org/ontology/bibo/Note> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.org/ontology/bibo/Document> ;
+                                     rdfs:comment "Notes or annotations about a resource."@en ;
+                                     rdfs:label "Note"@en .
+
+
+###  http://purl.org/ontology/bibo/Performance
+<http://purl.org/ontology/bibo/Performance> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.org/NET/c4dm/event.owl#Event> ;
+                                            rdfs:comment "A public performance."@en ;
+                                            rdfs:label "Performance"@en .
+
+
+###  http://purl.org/ontology/bibo/Periodical
+<http://purl.org/ontology/bibo/Periodical> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.org/ontology/bibo/Collection> ,
+                                                           <https://kg.odissei.nl/.well-known/genid/fcc0f7551e4ea9e43bb974b8eca261a6> ,
+                                                           <https://kg.odissei.nl/.well-known/genid/1115573aad1e9e5045f117b76bb63b67> ;
+                                           rdfs:comment "A group of related documents issued at regular intervals."@en ;
+                                           rdfs:label "Periodical"@en .
+
+
+###  http://purl.org/ontology/bibo/PersonalCommunicationDocument
+<http://purl.org/ontology/bibo/PersonalCommunicationDocument> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://purl.org/ontology/bibo/Document> ;
+                                                              rdfs:comment "A personal communication manifested in some document."@en ;
+                                                              rdfs:label "Personal Communication Document"@en .
+
+
+###  http://purl.org/ontology/bibo/Slide
+<http://purl.org/ontology/bibo/Slide> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/ontology/bibo/DocumentPart> ;
+                                      rdfs:comment "A slide in a slideshow"@en ;
+                                      rdfs:label "Slide"@en .
+
+
+###  http://purl.org/ontology/bibo/Specification
+<http://purl.org/ontology/bibo/Specification> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/ontology/bibo/Document> ;
+                                              rdfs:comment "A document describing a specification."@en ;
+                                              rdfs:label "Specification"@en .
+
+
+###  http://purl.org/ontology/bibo/Thesis
+<http://purl.org/ontology/bibo/Thesis> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.org/ontology/bibo/Document> ;
+                                       rdfs:comment "A document created to summarize research findings associated with the completion of an academic degree."@en ;
+                                       rdfs:label "Thesis"@en .
+
+
+###  http://purl.org/ontology/bibo/Webpage
+<http://purl.org/ontology/bibo/Webpage> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/ontology/bibo/Document> ;
+                                        rdfs:comment "A web page is an online document available (at least initially) on the world wide web. A web page is written first and foremost to appear on the web, as distinct from other online resources such as books, manuscripts or audio documents which use the web primarily as a distribution mechanism alongside other more traditional methods such as print."@en ;
+                                        rdfs:label "Webpage"@en .
+
+
+###  http://www.w3.org/2002/07/owl#DataProperty
+owl:DataProperty rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/csvw#Column
+<http://www.w3.org/ns/csvw#Column> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/csvw#Table
+<http://www.w3.org/ns/csvw#Table> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/csvw#TableSchema
+<http://www.w3.org/ns/csvw#TableSchema> rdf:type owl:Class .
+
+
+###  https://kg.odissei.nl/.well-known/genid/e513e5068ecb92f8d6d1386e3cd25181
+<https://kg.odissei.nl/.well-known/genid/e513e5068ecb92f8d6d1386e3cd25181> rdf:type owl:Class .
+
+
+###  https://kg.odissei.nl/.well-known/genid/f2f3e480a6852f58a44a3f662fd220f8
+<https://kg.odissei.nl/.well-known/genid/f2f3e480a6852f58a44a3f662fd220f8> rdf:type owl:Class .
+
+
+###  https://kg.odissei.nl/.well-known/genid/f4e35d90090f6cd06b239bbf60f3fbd4
+<https://kg.odissei.nl/.well-known/genid/f4e35d90090f6cd06b239bbf60f3fbd4> rdf:type owl:Class .
+
+
+###  https://kg.odissei.nl/.well-known/genid/f79477d37db71e256beb2d5c250077bd
+<https://kg.odissei.nl/.well-known/genid/f79477d37db71e256beb2d5c250077bd> rdf:type owl:Class .
+
+
+###  https://kg.odissei.nl/.well-known/genid/fcc0f7551e4ea9e43bb974b8eca261a6
+<https://kg.odissei.nl/.well-known/genid/fcc0f7551e4ea9e43bb974b8eca261a6> rdf:type owl:Class .
+
+
+###  https://kg.odissei.nl/.well-known/genid/10e3426315eb8581f11c60b44e8c983d
+<https://kg.odissei.nl/.well-known/genid/10e3426315eb8581f11c60b44e8c983d> rdf:type owl:Class .
+
+
+###  https://kg.odissei.nl/.well-known/genid/1115573aad1e9e5045f117b76bb63b67
+<https://kg.odissei.nl/.well-known/genid/1115573aad1e9e5045f117b76bb63b67> rdf:type owl:Class .
+
+
+###  https://kg.odissei.nl/.well-known/genid/5f487fed82cd9039c3905ee2142c0b7b
+<https://kg.odissei.nl/.well-known/genid/5f487fed82cd9039c3905ee2142c0b7b> rdf:type owl:Class .
+
+
+###  https://kg.odissei.nl/.well-known/genid/68de51b157f3af78b55e085ca7ab906d
+<https://kg.odissei.nl/.well-known/genid/68de51b157f3af78b55e085ca7ab906d> rdf:type owl:Class .
+
+
+###  https://kg.odissei.nl/.well-known/genid/79e99055d875c8d7f1971eb856094886
+<https://kg.odissei.nl/.well-known/genid/79e99055d875c8d7f1971eb856094886> rdf:type owl:Class .
+
+
+###  https://schema.org/ResearchProject
+<https://schema.org/ResearchProject> rdf:type owl:Class .
+
+
+###  https://schema.org/SoftwareSourceCode
+<https://schema.org/SoftwareSourceCode> rdf:type owl:Class .
+
+
+###  https://terms.codata.org/rdmt/Dataset
+<https://terms.codata.org/rdmt/Dataset> rdf:type owl:Class .
+
+
+###  https://terms.codata.org/rdmt/data-paper
+<https://terms.codata.org/rdmt/data-paper> rdf:type owl:Class .
+
+
+###  https://terms.codata.org/rdmt/orcid
+<https://terms.codata.org/rdmt/orcid> rdf:type owl:Class .
+
+
+###  https://terms.codata.org/rdmt/research-software
+<https://terms.codata.org/rdmt/research-software> rdf:type owl:Class .
+
+
+###  https://w3id.org/dsv-ontology#CategoricalDataType
+:CategoricalDataType rdf:type owl:Class ;
+                     rdfs:subClassOf :StatisticalDataType ;
+                     rdfs:comment "Set of statistical data types can be observed and - or - categorised."@en ;
+                     rdfs:label "Categorical Statistical Data Type"@en .
+
+
+###  https://w3id.org/dsv-ontology#Column
+:Column rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.org/linked-data/cube#ComponentSpecification> ,
+                        <http://www.w3.org/ns/csvw#Column> ;
+        rdfs:comment "Set of individual columns of a dataset."@en ;
+        rdfs:label "Dataset Component"@en .
+
+
+###  https://w3id.org/dsv-ontology#ColumnProperty
+:ColumnProperty rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.org/linked-data/cube#DimensionProperty> ,
+                                rdf:Property ;
+                rdfs:comment "RDF Properties represented by the column."@en ;
+                rdfs:label "Column Property"@en .
+
+
+###  https://w3id.org/dsv-ontology#Dataset
+:Dataset rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.org/linked-data/cube#DataSet> ,
+                         <http://www.w3.org/ns/csvw#Table> ;
+         rdfs:comment "Set of data."@en ;
+         rdfs:label "Dataset"@en .
+
+
+###  https://w3id.org/dsv-ontology#DatasetSchema
+:DatasetSchema rdf:type owl:Class ;
+               rdfs:subClassOf <http://purl.org/linked-data/cube#DataStructureDefinition> ,
+                               <http://www.w3.org/ns/csvw#TableSchema> ;
+               rdfs:comment "The structural schema of a dataset."@en ;
+               rdfs:label "Dataset Schema"@en .
+
+
+###  https://w3id.org/dsv-ontology#IntervalDataType
+:IntervalDataType rdf:type owl:Class ;
+                  rdfs:subClassOf :NumericalDataType ;
+                  rdfs:comment "Statistical data type representing ordered data measured over a numerical scale with equal distance between units."@en ;
+                  rdfs:label "Interval Statistical Data Type"@en .
+
+
+###  https://w3id.org/dsv-ontology#NominalDataType
+:NominalDataType rdf:type owl:Class ;
+                 rdfs:subClassOf :CategoricalDataType ;
+                 rdfs:comment "Statistical data type representing discrete units that cannot be ordered or measured."@en ;
+                 rdfs:label "Nominal Statistical Data Type"@en .
+
+
+###  https://w3id.org/dsv-ontology#NumericalDataType
+:NumericalDataType rdf:type owl:Class ;
+                   rdfs:subClassOf :StatisticalDataType ;
+                   rdfs:comment "Set of statistical data types can be measured and quantified."@en ;
+                   rdfs:label "Numerical Statistical Data Type"@en .
+
+
+###  https://w3id.org/dsv-ontology#OrdinalDataType
+:OrdinalDataType rdf:type owl:Class ;
+                 rdfs:subClassOf :CategoricalDataType ;
+                 rdfs:comment "Statistical data type representing discrete units that can be ordered or measured."@en ;
+                 rdfs:label "Ordinal Statistical Data Type"@en .
+
+
+###  https://w3id.org/dsv-ontology#RatioDataType
+:RatioDataType rdf:type owl:Class ;
+               rdfs:subClassOf :NumericalDataType ;
+               rdfs:comment "Statistical data type representing ordered data with equal distance between units, where negative values are not allowed."@en ;
+               rdfs:label "Ratio Statistical Data Type"@en .
+
+
+###  https://w3id.org/dsv-ontology#StatisticalDataType
+:StatisticalDataType rdf:type owl:Class ;
+                     rdfs:comment "Set of statistical data types."@en ;
+                     rdfs:label "Statistical Data Type"@en .
+
+
+###  https://w3id.org/dsv-ontology#SummaryStatistics
+:SummaryStatistics rdf:type owl:Class ;
+                   rdfs:comment "Set of summary statistics about the dataset or column."@en ;
+                   rdfs:label "Summary Statistics"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
