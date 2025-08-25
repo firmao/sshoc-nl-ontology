@@ -1,4 +1,5 @@
 import json
+import requests
 from rdflib import Graph, URIRef, Literal, Namespace
 from rdflib.namespace import RDF, RDFS, OWL, DCTERMS
 
@@ -58,7 +59,6 @@ def generate_owl_ontology(json_data):
     g.add((ontology_uri, OWL.imports, URIRef(skos)))
     g.add((ontology_uri, OWL.imports, URIRef(foaf)))
 
-
     # Iterate through the bindings and create RDF triples
     for binding in json_data.get("results", {}).get("bindings", []):
         entity_type_value = binding.get("type", {}).get("value")
@@ -95,7 +95,7 @@ def generate_owl_ontology(json_data):
         if sub_class_of_value:
             g.add((entity_uri, RDFS.subClassOf, URIRef(sub_class_of_value)))
         
-        # Handle multiple subClassOf entries if they exist (not in this specific JSON, but good practice)
+        # Handle multiple subClassOf entries if they exist
         sub_class_of_list = binding.get("subClassOf", [])
         if isinstance(sub_class_of_list, list):
             for sub_class_uri in sub_class_of_list:
@@ -113,343 +113,35 @@ def generate_owl_ontology(json_data):
     # Serialize the graph to OWL/XML format
     return g.serialize(format="xml", pretty=True)
 
-if __name__ == "__main__":
-    # The JSON data is provided here as a string for a self-contained example.
-    # In a real-world scenario, you would load this from a file.
-    json_content = """
-    {
-      "head": {
-        "vars": [
-          "entity",
-          "type",
-          "label",
-          "comment",
-          "subClassOf",
-          "domain",
-          "range"
-        ]
-      },
-      "results": {
-        "bindings": [
-          {
-            "entity": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#CategoricalDataType"
-            },
-            "type": {
-              "type": "literal",
-              "value": "Class"
-            },
-            "label": {
-              "type": "literal",
-              "value": "Categorical Statistical Data Type"
-            },
-            "comment": {
-              "type": "literal",
-              "value": "Set of statistical data types can be observed and - or - categorised."
-            },
-            "subClassOf": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#StatisticalDataType"
-            }
-          },
-          {
-            "entity": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#Column"
-            },
-            "type": {
-              "type": "literal",
-              "value": "Class"
-            },
-            "label": {
-              "type": "literal",
-              "value": "Dataset Component"
-            },
-            "comment": {
-              "type": "literal",
-              "value": "Set of individual columns of a dataset."
-            },
-            "subClassOf": [
-                {"type": "uri", "value": "http://purl.org/linked-data/cube#ComponentSpecification"},
-                {"type": "uri", "value": "http://www.w3.org/ns/csvw#Column"}
-            ]
-          },
-          {
-            "entity": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#ColumnProperty"
-            },
-            "type": {
-              "type": "literal",
-              "value": "Class"
-            },
-            "label": {
-              "type": "literal",
-              "value": "Column Property"
-            },
-            "comment": {
-              "type": "literal",
-              "value": "RDF Properties represented by the column."
-            },
-            "subClassOf": [
-                {"type": "uri", "value": "http://purl.org/linked-data/cube#DimensionProperty"},
-                {"type": "uri", "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"}
-            ]
-          },
-          {
-            "entity": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#Dataset"
-            },
-            "type": {
-              "type": "literal",
-              "value": "Class"
-            },
-            "label": {
-              "type": "literal",
-              "value": "Dataset"
-            },
-            "comment": {
-              "type": "literal",
-              "value": "Set of data."
-            },
-            "subClassOf": [
-                {"type": "uri", "value": "http://purl.org/linked-data/cube#DataSet"},
-                {"type": "uri", "value": "http://www.w3.org/ns/csvw#Table"}
-            ]
-          },
-          {
-            "entity": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#DatasetSchema"
-            },
-            "type": {
-              "type": "literal",
-              "value": "Class"
-            },
-            "label": {
-              "type": "literal",
-              "value": "Dataset Schema"
-            },
-            "comment": {
-              "type": "literal",
-              "value": "The structural schema of a dataset."
-            },
-            "subClassOf": [
-                {"type": "uri", "value": "http://purl.org/linked-data/cube#DataStructureDefinition"},
-                {"type": "uri", "value": "http://www.w3.org/ns/csvw#TableSchema"}
-            ]
-          },
-          {
-            "entity": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#StatisticalDataType"
-            },
-            "type": {
-              "type": "literal",
-              "value": "Class"
-            },
-            "label": {
-              "type": "literal",
-              "value": "Statistical Data Type"
-            },
-            "comment": {
-              "type": "literal",
-              "value": "Set of statistical data types."
-            }
-          },
-          {
-            "entity": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#SummaryStatistics"
-            },
-            "type": {
-              "type": "literal",
-              "value": "Class"
-            },
-            "label": {
-              "type": "literal",
-              "value": "Summary Statistics"
-            },
-            "comment": {
-              "type": "literal",
-              "value": "Set of summary statistics about the dataset or column."
-            }
-          },
-          {
-            "entity": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#NumericalDataType"
-            },
-            "type": {
-              "type": "literal",
-              "value": "Class"
-            },
-            "label": {
-              "type": "literal",
-              "value": "Numerical Statistical Data Type"
-            },
-            "comment": {
-              "type": "literal",
-              "value": "Set of statistical data types can be measured and quantified."
-            },
-            "subClassOf": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#StatisticalDataType"
-            }
-          },
-          {
-            "entity": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#IntervalDataType"
-            },
-            "type": {
-              "type": "literal",
-              "value": "Class"
-            },
-            "label": {
-              "type": "literal",
-              "value": "Interval Statistical Data Type"
-            },
-            "comment": {
-              "type": "literal",
-              "value": "Statistical data type representing ordered data measured over a numerical scale with equal distance between units."
-            },
-            "subClassOf": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#NumericalDataType"
-            }
-          },
-          {
-            "entity": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#NominalDataType"
-            },
-            "type": {
-              "type": "literal",
-              "value": "Class"
-            },
-            "label": {
-              "type": "literal",
-              "value": "Nominal Statistical Data Type"
-            },
-            "comment": {
-              "type": "literal",
-              "value": "Statistical data type representing discrete units that cannot be ordered or measured."
-            },
-            "subClassOf": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#CategoricalDataType"
-            }
-          },
-          {
-            "entity": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#OrdinalDataType"
-            },
-            "type": {
-              "type": "literal",
-              "value": "Class"
-            },
-            "label": {
-              "type": "literal",
-              "value": "Ordinal Statistical Data Type"
-            },
-            "comment": {
-              "type": "literal",
-              "value": "Statistical data type representing discrete units that can be ordered or measured."
-            },
-            "subClassOf": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#CategoricalDataType"
-            }
-          },
-          {
-            "entity": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#RatioDataType"
-            },
-            "type": {
-              "type": "literal",
-              "value": "Class"
-            },
-            "label": {
-              "type": "literal",
-              "value": "Ratio Statistical Data Type"
-            },
-            "comment": {
-              "type": "literal",
-              "value": "Statistical data type representing ordered data with equal distance between units, where negative values are not allowed."
-            },
-            "subClassOf": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#NumericalDataType"
-            }
-          },
-          {
-            "entity": {
-              "type": "uri",
-              "value": "http://purl.org/ontology/bibo/cites"
-            },
-            "type": {
-              "type": "literal",
-              "value": "ObjectProperty"
-            },
-            "label": {
-              "type": "literal",
-              "value": "cites"
-            },
-            "comment": {
-              "type": "literal",
-              "value": "Relates a document to another document that is cited by the first document as reference, comment, review, quotation or for another purpose."
-            },
-            "domain": {
-              "type": "uri",
-              "value": "https://schema.org/SoftwareSourceCode"
-            },
-            "range": {
-              "type": "uri",
-              "value": "http://purl.org/ontology/bibo/Document"
-            }
-          },
-          {
-            "entity": {
-              "type": "uri",
-              "value": "https://w3id.org/dsv-ontology#hasCategories"
-            },
-            "type": {
-              "type": "literal",
-              "value": "AnnotationProperty"
-            },
-            "label": {
-              "type": "literal",
-              "value": "has categories"
-            },
-            "comment": {
-              "type": "literal",
-              "value": "Links the dataset or column to a list of categories."
-            },
-            "domain": [
-                {"type": "uri", "value": "https://w3id.org/dsv-ontology#Dataset"},
-                {"type": "uri", "value": "https://w3id.org/dsv-ontology#Column"}
-            ],
-            "range": {
-              "type": "uri",
-              "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
-            }
-          }
-        ]
-      }
-    }
+def fetch_json_from_url(url):
     """
-    
-    # Load the JSON data
+    Fetches JSON content from a given URL.
+
+    Args:
+        url (str): The URL to fetch the JSON from.
+
+    Returns:
+        dict: The parsed JSON content.
+    """
     try:
-        data = json.loads(json_content)
-        owl_output = generate_owl_ontology(data)
-        print(owl_output)
+        response = requests.get(url)
+        response.raise_for_status()  # Raise an exception for bad status codes (4xx or 5xx)
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching data from URL: {e}")
+        return None
     except json.JSONDecodeError as e:
-        print(f"Error decoding JSON: {e}")
-    except Exception as e:
-        print(f"An unexpected error occurred: {e}")
+        print(f"Error decoding JSON from response: {e}")
+        return None
+
+if __name__ == "__main__":
+    # Replace this URL with the actual URL of your ontology JSON file
+    ontology_url = "https://example.com/ontology.json"
+
+    data = fetch_json_from_url(ontology_url)
+    if data:
+        try:
+            owl_output = generate_owl_ontology(data)
+            print(owl_output)
+        except Exception as e:
+            print(f"An unexpected error occurred during ontology generation: {e}")
