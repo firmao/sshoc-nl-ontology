@@ -3,15 +3,13 @@ import requests
 from rdflib import Graph, URIRef, Literal, Namespace
 from rdflib.namespace import RDF, RDFS, OWL, DCTERMS
 
-def generate_owl_ontology(json_data):
+def generate_owl_ontology(json_data, output_file_path):
     """
-    Generates an OWL RDF ontology from the provided JSON data.
+    Generates an OWL RDF ontology from the provided JSON data and saves it to a file.
 
     Args:
         json_data (dict): The dictionary containing the ontology data.
-
-    Returns:
-        str: A string containing the OWL ontology in RDF/XML format.
+        output_file_path (str): The path to the file where the OWL content will be saved.
     """
     # Initialize the RDF graph
     g = Graph()
@@ -110,8 +108,13 @@ def generate_owl_ontology(json_data):
         if range_value and rdf_type in [OWL.ObjectProperty, OWL.DatatypeProperty]:
             g.add((entity_uri, RDFS.range, URIRef(range_value)))
 
-    # Serialize the graph to OWL/XML format
-    return g.serialize(format="xml", pretty=True)
+    # Serialize the graph to OWL/XML format and save it to the specified file
+    try:
+        with open(output_file_path, "w", encoding="utf-8") as f:
+            f.write(g.serialize(format="xml", pretty=True))
+        print(f"Successfully saved OWL ontology to {output_file_path}")
+    except Exception as e:
+        print(f"An error occurred while saving the file: {e}")
 
 def fetch_json_from_url(url):
     """
@@ -136,12 +139,12 @@ def fetch_json_from_url(url):
 
 if __name__ == "__main__":
     # Replace this URL with the actual URL of your ontology JSON file
-    ontology_url = "https://example.com/ontology.json"
+    ontology_url = "https://github.com/firmao/sshoc-nl-ontology/raw/refs/heads/main/onto,json"
+    output_filename = "ontologyGenerated.owl"
 
     data = fetch_json_from_url(ontology_url)
     if data:
         try:
-            owl_output = generate_owl_ontology(data)
-            print(owl_output)
+            generate_owl_ontology(data, output_filename)
         except Exception as e:
             print(f"An unexpected error occurred during ontology generation: {e}")
