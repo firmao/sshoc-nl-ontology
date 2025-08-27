@@ -9,6 +9,7 @@
     xml:base="http://www.semanticweb.org/user/ontologies/2025/8/university#">
 
     <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2025/8/university#">
+        <dc:title xml:lang="en">Vocabulary of a Friend</dc:title>
         <rdfs:comment>This ontology describes a simple university domain, including professors, students, and courses.</rdfs:comment>
     </owl:Ontology>
     
