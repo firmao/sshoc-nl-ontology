@@ -23,6 +23,21 @@
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <vann:preferredNamespacePrefix>sshoc-nl-ontology</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://kg.odissei.nl/odissei/odissei-kg</vann:preferredNamespaceUri>
+          <rdfs:comment>This is the ontology documentation for the SSHOC-NL Knowledge Graph, available at https://kg.odissei.nl/.
+     
+          This ontology serves as a conceptual framework designed to structure and formalize knowledge within the Dutch social sciences and humanities research landscape. It is a key component of the SSH Open Cloud (SSHOC) project, a European initiative aimed at creating a cloud-based infrastructure for researchers.
+          
+          The primary purpose of the SSHOC-NL Ontology is to provide a common vocabulary and set of relationships for describing research-related entities, such as academic articles, books, datasets, and various types of statistical data. By using this standardized, machine-readable format, the ontology facilitates:
+          
+          - Interoperability: It allows different systems and platforms to understand and exchange data about research outputs consistently.
+          
+          - Discoverability: Researchers can more easily find and access relevant resources by navigating the structured relationships defined in the ontology.
+          
+          - Knowledge Representation: It creates a rich, interconnected knowledge graph of Dutch social science and humanities research, which can be queried and analyzed in sophisticated ways.
+          
+          In essence, the SSHOC-NL Ontology translates the complex, nuanced world of scholarly information into a structured model, making it more accessible and useful for both human users and automated systems.
+          
+          </rdfs:comment>
     </owl:Ontology>
     
 
