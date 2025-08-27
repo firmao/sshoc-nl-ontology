@@ -5087,6 +5087,21 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
     <rdf:Description>
         <foaf:mbox>dave@epimorphics.com</foaf:mbox>
     </rdf:Description>
+    <rdf:Description>
+        <foaf:mbox>arofan.gregory@earthlink.net</foaf:mbox>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:mbox>ian@epimorphics.com</foaf:mbox>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:mbox>dave@epimorphics.com</foaf:mbox>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:mbox>richard@cyganiak.de</foaf:mbox>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:mbox>jeni@jenitennison.com</foaf:mbox>
+    </rdf:Description>
     
 
 

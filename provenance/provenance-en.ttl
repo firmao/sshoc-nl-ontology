@@ -7,6 +7,6 @@
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:specializationOf <https://github.com/odissei-data/odissei-kg/raw/refs/heads/acceptance/static/sshoc-nl-ontology.owl>;
-	 prov:wasGeneratedAt "Aug 22, 2025";
+	 prov:wasGeneratedAt "Aug 27, 2025";
 .
 :agent0 a prov:Agent; foaf:name "Andre Valdestilhas".
