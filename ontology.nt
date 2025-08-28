@@ -1,12 +1,14 @@
-<https://w3id.org/dsv-ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/dsv-ontology> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/NET/c4dm/event.owl#> .
-<https://w3id.org/dsv-ontology> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/linked-data/cube> .
-<https://w3id.org/dsv-ontology> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/ontology/bibo/> .
-<https://w3id.org/dsv-ontology> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core#> .
-<https://w3id.org/dsv-ontology> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/csvw> .
-<https://w3id.org/dsv-ontology> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
-<https://w3id.org/dsv-ontology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dsv-ontology" .
-<https://w3id.org/dsv-ontology> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/dsv-ontology#" .
+<https://kg.odissei.nl/odissei/odissei-kg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://kg.odissei.nl/odissei/odissei-kg> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/NET/c4dm/event.owl#> .
+<https://kg.odissei.nl/odissei/odissei-kg> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/linked-data/cube> .
+<https://kg.odissei.nl/odissei/odissei-kg> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/ontology/bibo/> .
+<https://kg.odissei.nl/odissei/odissei-kg> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core#> .
+<https://kg.odissei.nl/odissei/odissei-kg> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/csvw> .
+<https://kg.odissei.nl/odissei/odissei-kg> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
+<https://kg.odissei.nl/odissei/odissei-kg> <http://purl.org/dc/elements/1.1/title> "SSHOC-NL Ontology"@en .
+<https://kg.odissei.nl/odissei/odissei-kg> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sshoc-nl-ontology" .
+<https://kg.odissei.nl/odissei/odissei-kg> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://kg.odissei.nl/odissei/odissei-kg" .
+<https://kg.odissei.nl/odissei/odissei-kg> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the ontology documentation for the SSHOC-NL Knowledge Graph, available at https://kg.odissei.nl/.\n     \n          This ontology serves as a conceptual framework designed to structure and formalize knowledge within the Dutch social sciences and humanities research landscape. It is a key component of the SSH Open Cloud (SSHOC) project, a European initiative aimed at creating a cloud-based infrastructure for researchers.\n          \n          The primary purpose of the SSHOC-NL Ontology is to provide a common vocabulary and set of relationships for describing research-related entities, such as academic articles, books, datasets, and various types of statistical data. By using this standardized, machine-readable format, the ontology facilitates:\n          \n          - Interoperability: It allows different systems and platforms to understand and exchange data about research outputs consistently.\n          \n          - Discoverability: Researchers can more easily find and access relevant resources by navigating the structured relationships defined in the ontology.\n          \n          - Knowledge Representation: It creates a rich, interconnected knowledge graph of Dutch social science and humanities research, which can be queried and analyzed in sophisticated ways.\n          \n          In essence, the SSHOC-NL Ontology translates the complex, nuanced world of scholarly information into a structured model, making it more accessible and useful for both human users and automated systems.\n          \n          " .
 # 
 # 
 # #################################################################
@@ -3111,11 +3113,16 @@ _:genid107 <http://xmlns.com/foaf/0.1/mbox> "jeni@jenitennison.com" .
 _:genid108 <http://xmlns.com/foaf/0.1/mbox> "arofan.gregory@earthlink.net" .
 _:genid109 <http://xmlns.com/foaf/0.1/mbox> "ian@epimorphics.com" .
 _:genid110 <http://xmlns.com/foaf/0.1/mbox> "dave@epimorphics.com" .
-_:genid111 <http://xmlns.com/foaf/0.1/mbox> "arofan.gregory@earthlink.net" .
-_:genid112 <http://xmlns.com/foaf/0.1/mbox> "ian@epimorphics.com" .
-_:genid113 <http://xmlns.com/foaf/0.1/mbox> "dave@epimorphics.com" .
-_:genid114 <http://xmlns.com/foaf/0.1/mbox> "richard@cyganiak.de" .
-_:genid115 <http://xmlns.com/foaf/0.1/mbox> "jeni@jenitennison.com" .
+_:genid111 <http://xmlns.com/foaf/0.1/mbox> "ian@epimorphics.com" .
+_:genid112 <http://xmlns.com/foaf/0.1/mbox> "dave@epimorphics.com" .
+_:genid113 <http://xmlns.com/foaf/0.1/mbox> "arofan.gregory@earthlink.net" .
+_:genid114 <http://xmlns.com/foaf/0.1/mbox> "ian@epimorphics.com" .
+_:genid115 <http://xmlns.com/foaf/0.1/mbox> "richard@cyganiak.de" .
+_:genid116 <http://xmlns.com/foaf/0.1/mbox> "jeni@jenitennison.com" .
+_:genid117 <http://xmlns.com/foaf/0.1/mbox> "arofan.gregory@earthlink.net" .
+_:genid118 <http://xmlns.com/foaf/0.1/mbox> "dave@epimorphics.com" .
+_:genid119 <http://xmlns.com/foaf/0.1/mbox> "richard@cyganiak.de" .
+_:genid120 <http://xmlns.com/foaf/0.1/mbox> "jeni@jenitennison.com" .
 # 
 # 
 # #################################################################

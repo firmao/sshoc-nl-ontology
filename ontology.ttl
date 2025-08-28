@@ -1,20 +1,36 @@
-@prefix : <https://w3id.org/dsv-ontology#> .
+@prefix : <https://kg.odissei.nl/odissei/odissei-kg#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/dsv-ontology#> .
+@base <https://kg.odissei.nl/odissei/odissei-kg#> .
 
-<https://w3id.org/dsv-ontology> rdf:type owl:Ontology ;
-                                 owl:imports <http://purl.org/NET/c4dm/event.owl#> ,
-                                             <http://purl.org/linked-data/cube> ,
-                                             <http://purl.org/ontology/bibo/> ,
-                                             <http://www.w3.org/2004/02/skos/core#> ,
-                                             <http://www.w3.org/ns/csvw> ,
-                                             <http://xmlns.com/foaf/0.1/> ;
-                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "dsv-ontology" ;
-                                 <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/dsv-ontology#" .
+<https://kg.odissei.nl/odissei/odissei-kg> rdf:type owl:Ontology ;
+                                            owl:imports <http://purl.org/NET/c4dm/event.owl#> ,
+                                                        <http://purl.org/linked-data/cube> ,
+                                                        <http://purl.org/ontology/bibo/> ,
+                                                        <http://www.w3.org/2004/02/skos/core#> ,
+                                                        <http://www.w3.org/ns/csvw> ,
+                                                        <http://xmlns.com/foaf/0.1/> ;
+                                            <http://purl.org/dc/elements/1.1/title> "SSHOC-NL Ontology"@en ;
+                                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "sshoc-nl-ontology" ;
+                                            <http://purl.org/vocab/vann/preferredNamespaceUri> "https://kg.odissei.nl/odissei/odissei-kg" ;
+                                            rdfs:comment """This is the ontology documentation for the SSHOC-NL Knowledge Graph, available at https://kg.odissei.nl/.
+     
+          This ontology serves as a conceptual framework designed to structure and formalize knowledge within the Dutch social sciences and humanities research landscape. It is a key component of the SSH Open Cloud (SSHOC) project, a European initiative aimed at creating a cloud-based infrastructure for researchers.
+          
+          The primary purpose of the SSHOC-NL Ontology is to provide a common vocabulary and set of relationships for describing research-related entities, such as academic articles, books, datasets, and various types of statistical data. By using this standardized, machine-readable format, the ontology facilitates:
+          
+          - Interoperability: It allows different systems and platforms to understand and exchange data about research outputs consistently.
+          
+          - Discoverability: Researchers can more easily find and access relevant resources by navigating the structured relationships defined in the ontology.
+          
+          - Knowledge Representation: It creates a rich, interconnected knowledge graph of Dutch social science and humanities research, which can be queried and analyzed in sophisticated ways.
+          
+          In essence, the SSHOC-NL Ontology translates the complex, nuanced world of scholarly information into a structured model, making it more accessible and useful for both human users and automated systems.
+          
+          """ .
 
 #################################################################
 #    Annotation properties
@@ -174,12 +190,12 @@ owl:deprecated rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/dsv-ontology#hasCategories
-:hasCategories rdf:type owl:AnnotationProperty ;
-               rdfs:comment "Links the dataset or column to a list of categories."@en ;
-               rdfs:label "has categories"@en ;
-               rdfs:range rdf:List ;
-               rdfs:domain :Column ,
-                           :Dataset .
+<https://w3id.org/dsv-ontology#hasCategories> rdf:type owl:AnnotationProperty ;
+                                              rdfs:comment "Links the dataset or column to a list of categories."@en ;
+                                              rdfs:label "has categories"@en ;
+                                              rdfs:range rdf:List ;
+                                              rdfs:domain <https://w3id.org/dsv-ontology#Column> ,
+                                                          <https://w3id.org/dsv-ontology#Dataset> .
 
 
 #################################################################
@@ -3167,89 +3183,89 @@ owl:Thing rdf:type owl:Class ;
 
 
 ###  https://w3id.org/dsv-ontology#CategoricalDataType
-:CategoricalDataType rdf:type owl:Class ;
-                     rdfs:subClassOf :StatisticalDataType ;
-                     rdfs:comment "Set of statistical data types can be observed and - or - categorised."@en ;
-                     rdfs:label "Categorical Statistical Data Type"@en .
+<https://w3id.org/dsv-ontology#CategoricalDataType> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://w3id.org/dsv-ontology#StatisticalDataType> ;
+                                                    rdfs:comment "Set of statistical data types can be observed and - or - categorised."@en ;
+                                                    rdfs:label "Categorical Statistical Data Type"@en .
 
 
 ###  https://w3id.org/dsv-ontology#Column
-:Column rdf:type owl:Class ;
-        rdfs:subClassOf <http://purl.org/linked-data/cube#ComponentSpecification> ,
-                        <http://www.w3.org/ns/csvw#Column> ;
-        rdfs:comment "Set of individual columns of a dataset."@en ;
-        rdfs:label "Dataset Component"@en .
+<https://w3id.org/dsv-ontology#Column> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.org/linked-data/cube#ComponentSpecification> ,
+                                                       <http://www.w3.org/ns/csvw#Column> ;
+                                       rdfs:comment "Set of individual columns of a dataset."@en ;
+                                       rdfs:label "Dataset Component"@en .
 
 
 ###  https://w3id.org/dsv-ontology#ColumnProperty
-:ColumnProperty rdf:type owl:Class ;
-                rdfs:subClassOf <http://purl.org/linked-data/cube#DimensionProperty> ,
-                                rdf:Property ;
-                rdfs:comment "RDF Properties represented by the column."@en ;
-                rdfs:label "Column Property"@en .
+<https://w3id.org/dsv-ontology#ColumnProperty> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.org/linked-data/cube#DimensionProperty> ,
+                                                               rdf:Property ;
+                                               rdfs:comment "RDF Properties represented by the column."@en ;
+                                               rdfs:label "Column Property"@en .
 
 
 ###  https://w3id.org/dsv-ontology#Dataset
-:Dataset rdf:type owl:Class ;
-         rdfs:subClassOf <http://purl.org/linked-data/cube#DataSet> ,
-                         <http://www.w3.org/ns/csvw#Table> ;
-         rdfs:comment "Set of data."@en ;
-         rdfs:label "Dataset"@en .
+<https://w3id.org/dsv-ontology#Dataset> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/linked-data/cube#DataSet> ,
+                                                        <http://www.w3.org/ns/csvw#Table> ;
+                                        rdfs:comment "Set of data."@en ;
+                                        rdfs:label "Dataset"@en .
 
 
 ###  https://w3id.org/dsv-ontology#DatasetSchema
-:DatasetSchema rdf:type owl:Class ;
-               rdfs:subClassOf <http://purl.org/linked-data/cube#DataStructureDefinition> ,
-                               <http://www.w3.org/ns/csvw#TableSchema> ;
-               rdfs:comment "The structural schema of a dataset."@en ;
-               rdfs:label "Dataset Schema"@en .
+<https://w3id.org/dsv-ontology#DatasetSchema> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/linked-data/cube#DataStructureDefinition> ,
+                                                              <http://www.w3.org/ns/csvw#TableSchema> ;
+                                              rdfs:comment "The structural schema of a dataset."@en ;
+                                              rdfs:label "Dataset Schema"@en .
 
 
 ###  https://w3id.org/dsv-ontology#IntervalDataType
-:IntervalDataType rdf:type owl:Class ;
-                  rdfs:subClassOf :NumericalDataType ;
-                  rdfs:comment "Statistical data type representing ordered data measured over a numerical scale with equal distance between units."@en ;
-                  rdfs:label "Interval Statistical Data Type"@en .
+<https://w3id.org/dsv-ontology#IntervalDataType> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://w3id.org/dsv-ontology#NumericalDataType> ;
+                                                 rdfs:comment "Statistical data type representing ordered data measured over a numerical scale with equal distance between units."@en ;
+                                                 rdfs:label "Interval Statistical Data Type"@en .
 
 
 ###  https://w3id.org/dsv-ontology#NominalDataType
-:NominalDataType rdf:type owl:Class ;
-                 rdfs:subClassOf :CategoricalDataType ;
-                 rdfs:comment "Statistical data type representing discrete units that cannot be ordered or measured."@en ;
-                 rdfs:label "Nominal Statistical Data Type"@en .
+<https://w3id.org/dsv-ontology#NominalDataType> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://w3id.org/dsv-ontology#CategoricalDataType> ;
+                                                rdfs:comment "Statistical data type representing discrete units that cannot be ordered or measured."@en ;
+                                                rdfs:label "Nominal Statistical Data Type"@en .
 
 
 ###  https://w3id.org/dsv-ontology#NumericalDataType
-:NumericalDataType rdf:type owl:Class ;
-                   rdfs:subClassOf :StatisticalDataType ;
-                   rdfs:comment "Set of statistical data types can be measured and quantified."@en ;
-                   rdfs:label "Numerical Statistical Data Type"@en .
+<https://w3id.org/dsv-ontology#NumericalDataType> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://w3id.org/dsv-ontology#StatisticalDataType> ;
+                                                  rdfs:comment "Set of statistical data types can be measured and quantified."@en ;
+                                                  rdfs:label "Numerical Statistical Data Type"@en .
 
 
 ###  https://w3id.org/dsv-ontology#OrdinalDataType
-:OrdinalDataType rdf:type owl:Class ;
-                 rdfs:subClassOf :CategoricalDataType ;
-                 rdfs:comment "Statistical data type representing discrete units that can be ordered or measured."@en ;
-                 rdfs:label "Ordinal Statistical Data Type"@en .
+<https://w3id.org/dsv-ontology#OrdinalDataType> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://w3id.org/dsv-ontology#CategoricalDataType> ;
+                                                rdfs:comment "Statistical data type representing discrete units that can be ordered or measured."@en ;
+                                                rdfs:label "Ordinal Statistical Data Type"@en .
 
 
 ###  https://w3id.org/dsv-ontology#RatioDataType
-:RatioDataType rdf:type owl:Class ;
-               rdfs:subClassOf :NumericalDataType ;
-               rdfs:comment "Statistical data type representing ordered data with equal distance between units, where negative values are not allowed."@en ;
-               rdfs:label "Ratio Statistical Data Type"@en .
+<https://w3id.org/dsv-ontology#RatioDataType> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://w3id.org/dsv-ontology#NumericalDataType> ;
+                                              rdfs:comment "Statistical data type representing ordered data with equal distance between units, where negative values are not allowed."@en ;
+                                              rdfs:label "Ratio Statistical Data Type"@en .
 
 
 ###  https://w3id.org/dsv-ontology#StatisticalDataType
-:StatisticalDataType rdf:type owl:Class ;
-                     rdfs:comment "Set of statistical data types."@en ;
-                     rdfs:label "Statistical Data Type"@en .
+<https://w3id.org/dsv-ontology#StatisticalDataType> rdf:type owl:Class ;
+                                                    rdfs:comment "Set of statistical data types."@en ;
+                                                    rdfs:label "Statistical Data Type"@en .
 
 
 ###  https://w3id.org/dsv-ontology#SummaryStatistics
-:SummaryStatistics rdf:type owl:Class ;
-                   rdfs:comment "Set of summary statistics about the dataset or column."@en ;
-                   rdfs:label "Summary Statistics"@en .
+<https://w3id.org/dsv-ontology#SummaryStatistics> rdf:type owl:Class ;
+                                                  rdfs:comment "Set of summary statistics about the dataset or column."@en ;
+                                                  rdfs:label "Summary Statistics"@en .
 
 
 #################################################################
@@ -3401,10 +3417,25 @@ owl:Thing rdf:type owl:Class ;
 [ <http://xmlns.com/foaf/0.1/mbox> "dave@epimorphics.com"
  ] .
 
+[ <http://xmlns.com/foaf/0.1/mbox> "ian@epimorphics.com"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/mbox> "dave@epimorphics.com"
+ ] .
+
 [ <http://xmlns.com/foaf/0.1/mbox> "arofan.gregory@earthlink.net"
  ] .
 
 [ <http://xmlns.com/foaf/0.1/mbox> "ian@epimorphics.com"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/mbox> "richard@cyganiak.de"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/mbox> "jeni@jenitennison.com"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/mbox> "arofan.gregory@earthlink.net"
  ] .
 
 [ <http://xmlns.com/foaf/0.1/mbox> "dave@epimorphics.com"

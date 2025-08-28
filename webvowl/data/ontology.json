@@ -3,18 +3,30 @@
   "header" : {
     "languages" : [ "en", "undefined" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://purl.org/NET/c4dm/event.owl", "http://www.w3.org/ns/csvw", "http://www.w3.org/2002/07/owl", "https://kg.odissei.nl/.well-known/genid", "https://w3id.org/dsv-ontology", "http://www.w3.org/2001/XMLSchema", "http://purl.org/linked-data/cube", "http://purl.org/ontology/bibo", "https://terms.codata.org/rdmt", "http://prismstandard.org/namespaces/1.2/basic", "http://schemas.talis.com/2005/address/schema", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://purl.org/dc/terms", "http://xmlns.com/foaf/0.1", "http://purl.org/NET/scovo", "http://www.w3.org/2000/10/swap/pim/contact", "http://www.w3.org/2004/02/skos/core" ],
-    "iri" : "https://w3id.org/dsv-ontology",
+    "title" : {
+      "en" : "SSHOC-NL Ontology"
+    },
+    "iri" : "https://kg.odissei.nl/odissei/odissei-kg",
+    "comments" : {
+      "undefined" : "This is the ontology documentation for the SSHOC-NL Knowledge Graph, available at https://kg.odissei.nl/.\n     \n          This ontology serves as a conceptual framework designed to structure and formalize knowledge within the Dutch social sciences and humanities research landscape. It is a key component of the SSH Open Cloud (SSHOC) project, a European initiative aimed at creating a cloud-based infrastructure for researchers.\n          \n          The primary purpose of the SSHOC-NL Ontology is to provide a common vocabulary and set of relationships for describing research-related entities, such as academic articles, books, datasets, and various types of statistical data. By using this standardized, machine-readable format, the ontology facilitates:\n          \n          - Interoperability: It allows different systems and platforms to understand and exchange data about research outputs consistently.\n          \n          - Discoverability: Researchers can more easily find and access relevant resources by navigating the structured relationships defined in the ontology.\n          \n          - Knowledge Representation: It creates a rich, interconnected knowledge graph of Dutch social science and humanities research, which can be queried and analyzed in sophisticated ways.\n          \n          In essence, the SSHOC-NL Ontology translates the complex, nuanced world of scholarly information into a structured model, making it more accessible and useful for both human users and automated systems.\n          \n          "
+    },
     "other" : {
       "preferredNamespacePrefix" : [ {
         "identifier" : "preferredNamespacePrefix",
         "language" : "undefined",
-        "value" : "dsv-ontology",
+        "value" : "sshoc-nl-ontology",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
-        "value" : "https://w3id.org/dsv-ontology#",
+        "value" : "https://kg.odissei.nl/odissei/odissei-kg",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "SSHOC-NL Ontology",
         "type" : "label"
       } ]
     }
@@ -132,38 +144,35 @@
     "id" : "237",
     "type" : "owl:Class"
   }, {
-    "id" : "247",
+    "id" : "248",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "254",
-    "type" : "rdfs:Literal"
-  }, {
     "id" : "255",
-    "type" : "owl:Class"
-  }, {
-    "id" : "223",
-    "type" : "owl:Class"
-  }, {
-    "id" : "258",
-    "type" : "owl:Class"
-  }, {
-    "id" : "260",
-    "type" : "owl:Class"
-  }, {
-    "id" : "263",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "264",
-    "type" : "owl:Thing"
+    "id" : "256",
+    "type" : "owl:Class"
   }, {
-    "id" : "265",
-    "type" : "rdfs:Literal"
+    "id" : "227",
+    "type" : "owl:Class"
+  }, {
+    "id" : "259",
+    "type" : "owl:Class"
   }, {
     "id" : "261",
     "type" : "owl:Class"
   }, {
+    "id" : "264",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "265",
+    "type" : "owl:Thing"
+  }, {
     "id" : "266",
     "type" : "rdfs:Literal"
+  }, {
+    "id" : "262",
+    "type" : "owl:Class"
   }, {
     "id" : "267",
     "type" : "rdfs:Literal"
@@ -171,16 +180,19 @@
     "id" : "268",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "277",
-    "type" : "owl:Thing"
+    "id" : "269",
+    "type" : "rdfs:Literal"
   }, {
     "id" : "278",
-    "type" : "rdfs:Literal"
+    "type" : "owl:Thing"
   }, {
     "id" : "279",
     "type" : "rdfs:Literal"
   }, {
     "id" : "280",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "281",
     "type" : "rdfs:Literal"
   }, {
     "id" : "209",
@@ -189,28 +201,28 @@
     "id" : "232",
     "type" : "owl:Thing"
   }, {
-    "id" : "249",
+    "id" : "250",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "253",
+    "id" : "254",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "284",
+    "id" : "285",
     "type" : "rdfs:Literal"
   }, {
     "id" : "41",
     "type" : "owl:Class"
   }, {
-    "id" : "288",
+    "id" : "289",
     "type" : "owl:Thing"
   }, {
     "id" : "6",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "290",
+    "id" : "291",
     "type" : "owl:Class"
   }, {
-    "id" : "294",
+    "id" : "295",
     "type" : "owl:Thing"
   }, {
     "id" : "152",
@@ -228,38 +240,35 @@
     "id" : "182",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "310",
+    "id" : "311",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "313",
+    "id" : "314",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "317",
+    "id" : "318",
     "type" : "owl:unionOf"
   }, {
     "id" : "134",
     "type" : "owl:Class"
   }, {
-    "id" : "286",
+    "id" : "287",
     "type" : "owl:Class"
   }, {
     "id" : "84",
     "type" : "owl:Class"
   }, {
-    "id" : "262",
+    "id" : "263",
     "type" : "owl:unionOf"
   }, {
     "id" : "51",
     "type" : "owl:Class"
   }, {
-    "id" : "328",
+    "id" : "329",
     "type" : "owl:unionOf"
   }, {
-    "id" : "291",
+    "id" : "292",
     "type" : "owl:Class"
-  }, {
-    "id" : "330",
-    "type" : "owl:unionOf"
   }, {
     "id" : "331",
     "type" : "owl:unionOf"
@@ -267,22 +276,25 @@
     "id" : "332",
     "type" : "owl:unionOf"
   }, {
-    "id" : "110",
-    "type" : "owl:Class"
-  }, {
     "id" : "333",
     "type" : "owl:unionOf"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
   }, {
     "id" : "334",
     "type" : "owl:unionOf"
   }, {
-    "id" : "256",
+    "id" : "335",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "257",
     "type" : "owl:unionOf"
   }, {
     "id" : "194",
     "type" : "owl:unionOf"
   }, {
-    "id" : "289",
+    "id" : "290",
     "type" : "owl:equivalentClass"
   }, {
     "id" : "159",
@@ -291,46 +303,46 @@
     "id" : "119",
     "type" : "owl:Class"
   }, {
-    "id" : "360",
-    "type" : "owl:unionOf"
-  }, {
     "id" : "361",
     "type" : "owl:unionOf"
   }, {
     "id" : "362",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "363",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "370",
+    "id" : "371",
     "type" : "rdfs:Literal"
   }, {
     "id" : "191",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "373",
-    "type" : "rdfs:Literal"
-  }, {
     "id" : "374",
-    "type" : "owl:unionOf"
+    "type" : "rdfs:Literal"
   }, {
     "id" : "375",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "259",
-    "type" : "owl:Class"
-  }, {
-    "id" : "376",
     "type" : "owl:unionOf"
   }, {
-    "id" : "322",
+    "id" : "376",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "321",
+    "id" : "260",
+    "type" : "owl:Class"
+  }, {
+    "id" : "377",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "323",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "322",
     "type" : "owl:unionOf"
   }, {
     "id" : "165",
     "type" : "owl:Class"
   }, {
-    "id" : "377",
+    "id" : "378",
     "type" : "rdfs:Literal"
   }, {
     "id" : "213",
@@ -342,10 +354,10 @@
     "id" : "172",
     "type" : "owl:Class"
   }, {
-    "id" : "287",
+    "id" : "288",
     "type" : "owl:Class"
   }, {
-    "id" : "382",
+    "id" : "383",
     "type" : "owl:Class"
   }, {
     "id" : "87",
@@ -357,70 +369,67 @@
     "id" : "88",
     "type" : "owl:Class"
   }, {
-    "id" : "383",
+    "id" : "384",
     "type" : "owl:unionOf"
   }, {
-    "id" : "302",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "384",
+    "id" : "303",
     "type" : "rdfs:Literal"
   }, {
     "id" : "385",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "305",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "298",
-    "type" : "owl:Class"
-  }, {
-    "id" : "388",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "341",
+    "id" : "386",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "303",
+    "id" : "306",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "299",
     "type" : "owl:Class"
   }, {
     "id" : "389",
-    "type" : "rdfs:Datatype"
+    "type" : "owl:unionOf"
   }, {
-    "id" : "246",
+    "id" : "342",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "304",
     "type" : "owl:Class"
   }, {
     "id" : "390",
-    "type" : "rdfs:Literal"
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "391",
+    "id" : "247",
     "type" : "owl:Class"
   }, {
+    "id" : "391",
+    "type" : "rdfs:Literal"
+  }, {
     "id" : "392",
-    "type" : "owl:unionOf"
+    "type" : "owl:Class"
   }, {
     "id" : "393",
-    "type" : "rdfs:Literal"
+    "type" : "owl:unionOf"
   }, {
     "id" : "394",
     "type" : "rdfs:Literal"
   }, {
     "id" : "395",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "230",
     "type" : "rdfs:Literal"
   }, {
     "id" : "396",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "297",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "343",
+    "id" : "230",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "401",
+    "id" : "397",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "298",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "344",
     "type" : "rdfs:Literal"
   }, {
     "id" : "402",
@@ -429,28 +438,31 @@
     "id" : "403",
     "type" : "rdfs:Literal"
   }, {
+    "id" : "404",
+    "type" : "rdfs:Literal"
+  }, {
     "id" : "203",
     "type" : "rdfs:Literal"
   }, {
     "id" : "202",
     "type" : "owl:unionOf"
   }, {
-    "id" : "405",
-    "type" : "rdfs:Literal"
-  }, {
     "id" : "406",
-    "type" : "owl:unionOf"
+    "type" : "rdfs:Literal"
   }, {
     "id" : "407",
-    "type" : "rdfs:Literal"
+    "type" : "owl:unionOf"
   }, {
     "id" : "408",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "409",
     "type" : "rdfs:Literal"
   }, {
     "id" : "42",
     "type" : "owl:Class"
   }, {
-    "id" : "413",
+    "id" : "414",
     "type" : "owl:Class"
   }, {
     "id" : "66",
@@ -459,22 +471,22 @@
     "id" : "170",
     "type" : "owl:Class"
   }, {
-    "id" : "226",
+    "id" : "223",
     "type" : "owl:Class"
   }, {
-    "id" : "418",
+    "id" : "419",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "325",
+    "id" : "326",
     "type" : "owl:Class"
   }, {
     "id" : "189",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "420",
+    "id" : "421",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "379",
+    "id" : "380",
     "type" : "owl:Class"
   }, {
     "id" : "55",
@@ -483,7 +495,7 @@
     "id" : "184",
     "type" : "owl:unionOf"
   }, {
-    "id" : "421",
+    "id" : "422",
     "type" : "rdfs:Literal"
   }, {
     "id" : "188",
@@ -492,10 +504,7 @@
     "id" : "185",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "349",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "423",
+    "id" : "350",
     "type" : "rdfs:Literal"
   }, {
     "id" : "424",
@@ -504,25 +513,28 @@
     "id" : "425",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "276",
-    "type" : "rdfs:Literal"
-  }, {
     "id" : "426",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "428",
+    "id" : "277",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "427",
     "type" : "rdfs:Literal"
   }, {
     "id" : "429",
-    "type" : "owl:Class"
-  }, {
-    "id" : "300",
-    "type" : "owl:Class"
-  }, {
-    "id" : "432",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "387",
+    "id" : "430",
+    "type" : "owl:Class"
+  }, {
+    "id" : "301",
+    "type" : "owl:Class"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "388",
     "type" : "rdfs:Literal"
   }, {
     "id" : "104",
@@ -531,10 +543,10 @@
     "id" : "433",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "224",
+    "id" : "228",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "257",
+    "id" : "258",
     "type" : "owl:unionOf"
   }, {
     "id" : "434",
@@ -549,7 +561,7 @@
     "id" : "437",
     "type" : "owl:unionOf"
   }, {
-    "id" : "378",
+    "id" : "379",
     "type" : "owl:Class"
   }, {
     "id" : "37",
@@ -579,7 +591,7 @@
     "id" : "25",
     "type" : "owl:Class"
   }, {
-    "id" : "285",
+    "id" : "286",
     "type" : "owl:Class"
   }, {
     "id" : "44",
@@ -597,7 +609,7 @@
     "id" : "453",
     "type" : "owl:Class"
   }, {
-    "id" : "337",
+    "id" : "338",
     "type" : "owl:Class"
   }, {
     "id" : "459",
@@ -621,13 +633,13 @@
     "id" : "80",
     "type" : "owl:Class"
   }, {
-    "id" : "327",
+    "id" : "328",
     "type" : "owl:Class"
   }, {
     "id" : "161",
     "type" : "owl:Class"
   }, {
-    "id" : "315",
+    "id" : "316",
     "type" : "owl:Class"
   }, {
     "id" : "79",
@@ -636,7 +648,7 @@
     "id" : "39",
     "type" : "owl:Class"
   }, {
-    "id" : "309",
+    "id" : "310",
     "type" : "owl:Class"
   }, {
     "id" : "127",
@@ -645,7 +657,7 @@
     "id" : "210",
     "type" : "owl:Class"
   }, {
-    "id" : "228",
+    "id" : "225",
     "type" : "owl:Class"
   }, {
     "id" : "479",
@@ -693,7 +705,7 @@
     "id" : "91",
     "type" : "owl:Class"
   }, {
-    "id" : "312",
+    "id" : "313",
     "type" : "owl:Class"
   }, {
     "id" : "81",
@@ -723,10 +735,10 @@
     "id" : "77",
     "type" : "owl:Class"
   }, {
-    "id" : "293",
+    "id" : "294",
     "type" : "owl:Class"
   }, {
-    "id" : "409",
+    "id" : "410",
     "type" : "owl:Class"
   }, {
     "id" : "440",
@@ -756,13 +768,13 @@
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "398",
+    "id" : "399",
     "type" : "owl:Class"
   }, {
     "id" : "19",
     "type" : "owl:Class"
   }, {
-    "id" : "225",
+    "id" : "222",
     "type" : "owl:Class"
   }, {
     "id" : "131",
@@ -783,7 +795,7 @@
     "id" : "53",
     "type" : "owl:Class"
   }, {
-    "id" : "292",
+    "id" : "293",
     "type" : "owl:Class"
   }, {
     "id" : "54",
@@ -795,13 +807,13 @@
     "id" : "497",
     "type" : "owl:equivalentClass"
   }, {
+    "id" : "284",
+    "type" : "owl:Class"
+  }, {
     "id" : "283",
     "type" : "owl:Class"
   }, {
-    "id" : "282",
-    "type" : "owl:Class"
-  }, {
-    "id" : "227",
+    "id" : "224",
     "type" : "owl:Class"
   }, {
     "id" : "140",
@@ -1331,6 +1343,7 @@
     "comment" : {
       "en" : "Set of summary statistics about the dataset or column."
     },
+    "attributes" : [ "external" ],
     "id" : "214"
   }, {
     "iri" : "https://kg.odissei.nl/.well-known/genid/e513e5068ecb92f8d6d1386e3cd25181",
@@ -1374,7 +1387,7 @@
       "IRI-based" : "Periodical",
       "en" : "Periodical"
     },
-    "subClasses" : [ "225", "226", "227", "29", "228" ],
+    "subClasses" : [ "222", "223", "224", "29", "225" ],
     "comment" : {
       "en" : "A group of related documents issued at regular intervals."
     },
@@ -1412,37 +1425,37 @@
       "IRI-based" : "Agent"
     },
     "attributes" : [ "external", "equivalent" ],
-    "id" : "247"
+    "id" : "248"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "254",
+    "id" : "255",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "instances" : 0,
-    "union" : [ "105", "256" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "255"
+    "union" : [ "105", "257" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "256"
   }, {
     "instances" : 0,
-    "union" : [ "257", "149" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "223"
+    "union" : [ "258", "149" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "227"
   }, {
     "instances" : 0,
-    "union" : [ "259", "32" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "258"
+    "union" : [ "260", "32" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "259"
   }, {
     "instances" : 0,
-    "union" : [ "261", "262", "70" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "260"
+    "union" : [ "262", "263", "70" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "261"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "263",
+    "id" : "264",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -1450,13 +1463,13 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "264",
+    "id" : "265",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "265",
+    "id" : "266",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -1469,14 +1482,7 @@
       "IRI-based" : "10e3426315eb8581f11c60b44e8c983d"
     },
     "attributes" : [ "external" ],
-    "id" : "261"
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "266",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
+    "id" : "262"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "267",
@@ -1492,18 +1498,18 @@
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "277",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "278",
+    "id" : "269",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "278",
+    "label" : {
+      "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -1515,6 +1521,13 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "280",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "281",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -1535,21 +1548,21 @@
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "249",
+    "id" : "250",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "253",
+    "id" : "254",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "284",
+    "id" : "285",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -1586,23 +1599,23 @@
       "IRI-based" : "DocumentPart",
       "en" : "document part"
     },
-    "subClasses" : [ "286", "135", "287" ],
+    "subClasses" : [ "287", "135", "288" ],
     "comment" : {
       "en" : "a distinct part of a larger document or collected document."
     },
     "attributes" : [ "external" ],
     "id" : "41",
-    "superClasses" : [ "285", "32" ]
+    "superClasses" : [ "286", "32" ]
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "288",
+    "id" : "289",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://purl.org/linked-data/cube#DataSet",
-    "equivalent" : [ "289" ],
+    "equivalent" : [ "290" ],
     "baseIri" : "http://purl.org/linked-data/cube",
     "instances" : 0,
     "annotations" : {
@@ -1637,22 +1650,23 @@
       "IRI-based" : "NumericalDataType",
       "en" : "Numerical Statistical Data Type"
     },
-    "subClasses" : [ "292", "293" ],
+    "subClasses" : [ "293", "294" ],
     "comment" : {
       "en" : "Set of statistical data types can be measured and quantified."
     },
-    "id" : "290",
-    "superClasses" : [ "291" ]
+    "attributes" : [ "external" ],
+    "id" : "291",
+    "superClasses" : [ "292" ]
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "294",
+    "id" : "295",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Image",
-    "equivalent" : [ "297", "46" ],
+    "equivalent" : [ "298", "46" ],
     "baseIri" : "http://xmlns.com/foaf/0.1",
     "instances" : 0,
     "annotations" : {
@@ -1700,8 +1714,9 @@
     "comment" : {
       "en" : "RDF Properties represented by the column."
     },
+    "attributes" : [ "external" ],
     "id" : "98",
-    "superClasses" : [ "18", "298" ]
+    "superClasses" : [ "18", "299" ]
   }, {
     "iri" : "https://w3id.org/dsv-ontology#Column",
     "baseIri" : "https://w3id.org/dsv-ontology",
@@ -1713,8 +1728,9 @@
     "comment" : {
       "en" : "Set of individual columns of a dataset."
     },
+    "attributes" : [ "external" ],
     "id" : "163",
-    "superClasses" : [ "79", "300" ]
+    "superClasses" : [ "79", "301" ]
   }, {
     "iri" : "http://purl.org/ontology/bibo/Film",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -1762,14 +1778,14 @@
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "310",
+    "id" : "311",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "313",
+    "id" : "314",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -1777,8 +1793,8 @@
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "317"
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "318"
   }, {
     "iri" : "http://purl.org/ontology/bibo/Chapter",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -1849,12 +1865,12 @@
       "IRI-based" : "Excerpt",
       "en" : "Excerpt"
     },
-    "subClasses" : [ "325" ],
+    "subClasses" : [ "326" ],
     "comment" : {
       "en" : "A passage selected from a larger work."
     },
     "attributes" : [ "external" ],
-    "id" : "286",
+    "id" : "287",
     "superClasses" : [ "41" ]
   }, {
     "iri" : "http://purl.org/ontology/bibo/Conference",
@@ -1897,8 +1913,8 @@
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "262"
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "263"
   }, {
     "iri" : "http://purl.org/ontology/bibo/Book",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -1931,7 +1947,7 @@
       "IRI-based" : "Book",
       "en" : "Book"
     },
-    "subClasses" : [ "327" ],
+    "subClasses" : [ "328" ],
     "comment" : {
       "en" : "A written or printed work of fiction or nonfiction, usually on sheets of paper fastened or bound together within covers."
     },
@@ -1941,8 +1957,8 @@
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "328"
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "329"
   }, {
     "iri" : "https://w3id.org/dsv-ontology#StatisticalDataType",
     "baseIri" : "https://w3id.org/dsv-ontology",
@@ -1951,26 +1967,27 @@
       "IRI-based" : "StatisticalDataType",
       "en" : "Statistical Data Type"
     },
-    "subClasses" : [ "63", "290" ],
+    "subClasses" : [ "63", "291" ],
     "comment" : {
       "en" : "Set of statistical data types."
     },
-    "id" : "291"
+    "attributes" : [ "external" ],
+    "id" : "292"
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "330"
-  }, {
-    "instances" : 0,
-    "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "331"
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "332"
+  }, {
+    "instances" : 0,
+    "union" : [ "117", "32" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "333"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Organization",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -2023,22 +2040,22 @@
   }, {
     "instances" : 0,
     "union" : [ "105", "237" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "333"
-  }, {
-    "instances" : 0,
-    "union" : [ "60", "124", "57" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "334"
   }, {
     "instances" : 0,
-    "union" : [ "105", "237" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "256"
+    "union" : [ "60", "124", "57" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "335"
   }, {
     "instances" : 0,
     "union" : [ "105", "237" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "257"
+  }, {
+    "instances" : 0,
+    "union" : [ "105", "237" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "194"
   }, {
     "iri" : "http://purl.org/NET/scovo#Dataset",
@@ -2049,7 +2066,7 @@
       "IRI-based" : "Dataset"
     },
     "attributes" : [ "external", "equivalent" ],
-    "id" : "289"
+    "id" : "290"
   }, {
     "iri" : "https://w3id.org/dsv-ontology#DatasetSchema",
     "baseIri" : "https://w3id.org/dsv-ontology",
@@ -2061,6 +2078,7 @@
     "comment" : {
       "en" : "The structural schema of a dataset."
     },
+    "attributes" : [ "external" ],
     "id" : "159",
     "superClasses" : [ "80", "176" ]
   }, {
@@ -2104,17 +2122,17 @@
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "360"
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "361"
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "361"
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "362"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "362",
+    "id" : "363",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2122,7 +2140,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "370",
+    "id" : "371",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2138,7 +2156,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "373",
+    "id" : "374",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2146,12 +2164,12 @@
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "374"
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "375"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "375",
+    "id" : "376",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2164,16 +2182,16 @@
       "IRI-based" : "SoftwareSourceCode"
     },
     "attributes" : [ "external" ],
-    "id" : "259"
+    "id" : "260"
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "376"
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "377"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "322",
+    "id" : "323",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2181,8 +2199,8 @@
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "321"
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "322"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/OnlineChatAccount",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -2224,7 +2242,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "377",
+    "id" : "378",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2269,13 +2287,13 @@
       "IRI-based" : "CollectedDocument",
       "en" : "Collected Document"
     },
-    "subClasses" : [ "131", "379" ],
+    "subClasses" : [ "131", "380" ],
     "comment" : {
       "en" : "A document that simultaneously contains other documents."
     },
     "attributes" : [ "external" ],
     "id" : "43",
-    "superClasses" : [ "138", "378", "32" ]
+    "superClasses" : [ "138", "379", "32" ]
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/OnlineGamingAccount",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -2350,7 +2368,7 @@
       "en" : "A slide in a slideshow"
     },
     "attributes" : [ "external" ],
-    "id" : "287",
+    "id" : "288",
     "superClasses" : [ "41" ]
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/LabelProperty",
@@ -2388,7 +2406,7 @@
       "undefined" : "A foaf:LabelProperty is any RDF property with texual values that serve as labels."
     },
     "attributes" : [ "external" ],
-    "id" : "382"
+    "id" : "383"
   }, {
     "iri" : "http://purl.org/ontology/bibo/Performance",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -2430,7 +2448,7 @@
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "212"
   }, {
     "iri" : "https://terms.codata.org/rdmt/data-paper",
@@ -2445,20 +2463,12 @@
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "383"
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "384"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "302",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "384",
+    "id" : "303",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2472,9 +2482,17 @@
       "undefined" : "Literal"
     }
   }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "386",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "305",
+    "id" : "306",
     "label" : {
       "IRI-based" : "boolean"
     }
@@ -2487,16 +2505,16 @@
     },
     "subClasses" : [ "22", "98" ],
     "attributes" : [ "external" ],
-    "id" : "298"
+    "id" : "299"
   }, {
     "instances" : 0,
     "union" : [ "57", "11" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "388"
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "389"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "341",
+    "id" : "342",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2509,11 +2527,11 @@
       "IRI-based" : "Resource"
     },
     "attributes" : [ "external" ],
-    "id" : "303"
+    "id" : "304"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#int",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "389",
+    "id" : "390",
     "label" : {
       "IRI-based" : "int"
     }
@@ -2525,11 +2543,11 @@
       "IRI-based" : "Event"
     },
     "attributes" : [ "external" ],
-    "id" : "246"
+    "id" : "247"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "390",
+    "id" : "391",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2543,16 +2561,16 @@
     },
     "subClasses" : [ "117" ],
     "attributes" : [ "external" ],
-    "id" : "391"
+    "id" : "392"
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "392"
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "393"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "393",
+    "id" : "394",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2560,7 +2578,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "394",
+    "id" : "395",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2573,7 +2591,7 @@
       "IRI-based" : "Person"
     },
     "attributes" : [ "external", "equivalent" ],
-    "id" : "395"
+    "id" : "396"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
@@ -2590,7 +2608,7 @@
       "IRI-based" : "Person"
     },
     "attributes" : [ "external", "equivalent" ],
-    "id" : "396"
+    "id" : "397"
   }, {
     "iri" : "http://schema.org/ImageObject",
     "baseIri" : "http://schema.org",
@@ -2599,19 +2617,11 @@
       "IRI-based" : "ImageObject"
     },
     "attributes" : [ "external", "equivalent" ],
-    "id" : "297"
+    "id" : "298"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "343",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "401",
+    "id" : "344",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2635,6 +2645,14 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "404",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
     "id" : "203",
     "label" : {
       "IRI-based" : "Literal",
@@ -2643,12 +2661,12 @@
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "202"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "405",
+    "id" : "406",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2656,12 +2674,12 @@
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "406"
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "407"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "407",
+    "id" : "408",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2669,7 +2687,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "408",
+    "id" : "409",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2706,7 +2724,7 @@
       "IRI-based" : "Specification",
       "en" : "Specification"
     },
-    "subClasses" : [ "409" ],
+    "subClasses" : [ "410" ],
     "comment" : {
       "en" : "A document describing a specification."
     },
@@ -2746,7 +2764,7 @@
       "en" : "Document Status"
     },
     "individuals" : [ {
-      "iri" : "http://purl.org/ontology/bibo/status/published",
+      "iri" : "http://purl.org/ontology/bibo/status/legal",
       "baseIri" : "http://purl.org/ontology/bibo/status",
       "annotations" : {
         "term_status" : [ {
@@ -2762,11 +2780,11 @@
         } ]
       },
       "comment" : {
-        "en" : "Published document"
+        "en" : "Legal document"
       },
       "labels" : {
-        "IRI-based" : "published",
-        "en" : "published"
+        "IRI-based" : "legal",
+        "en" : "legal"
       }
     }, {
       "iri" : "http://purl.org/ontology/bibo/status/accepted",
@@ -2792,7 +2810,7 @@
         "en" : "accepted"
       }
     }, {
-      "iri" : "http://purl.org/ontology/bibo/status/legal",
+      "iri" : "http://purl.org/ontology/bibo/status/published",
       "baseIri" : "http://purl.org/ontology/bibo/status",
       "annotations" : {
         "term_status" : [ {
@@ -2808,11 +2826,11 @@
         } ]
       },
       "comment" : {
-        "en" : "Legal document"
+        "en" : "Published document"
       },
       "labels" : {
-        "IRI-based" : "legal",
-        "en" : "legal"
+        "IRI-based" : "published",
+        "en" : "published"
       }
     }, {
       "iri" : "http://purl.org/ontology/bibo/status/peerReviewed",
@@ -2957,7 +2975,7 @@
       "en" : "The status of the publication of a document."
     },
     "attributes" : [ "external" ],
-    "id" : "413"
+    "id" : "414"
   }, {
     "iri" : "https://w3id.org/dsv-ontology#OrdinalDataType",
     "baseIri" : "https://w3id.org/dsv-ontology",
@@ -2969,6 +2987,7 @@
     "comment" : {
       "en" : "Statistical data type representing discrete units that can be ordered or measured."
     },
+    "attributes" : [ "external" ],
     "id" : "66",
     "superClasses" : [ "63" ]
   }, {
@@ -3045,12 +3064,12 @@
       "en" : "A periodical of magazine Articles. A magazine is a publication that is issued periodically, usually bound in a paper cover, and typically contains essays, stories, poems, etc., by many writers, and often photographs and drawings, frequently specializing in a particular subject or area, as hobbies, news, or sports."
     },
     "attributes" : [ "external" ],
-    "id" : "226",
+    "id" : "223",
     "superClasses" : [ "30" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "418",
+    "id" : "419",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -3091,8 +3110,8 @@
       "en" : "An excerpted collection of words."
     },
     "attributes" : [ "external" ],
-    "id" : "325",
-    "superClasses" : [ "286" ]
+    "id" : "326",
+    "superClasses" : [ "287" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
@@ -3104,7 +3123,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "420",
+    "id" : "421",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -3145,7 +3164,7 @@
       "en" : "An edited book."
     },
     "attributes" : [ "external" ],
-    "id" : "379",
+    "id" : "380",
     "superClasses" : [ "43" ]
   }, {
     "iri" : "http://purl.org/ontology/bibo/Report",
@@ -3188,12 +3207,12 @@
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "184"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "421",
+    "id" : "422",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -3201,7 +3220,7 @@
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "188"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -3214,15 +3233,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "349",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "423",
+    "id" : "350",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -3246,14 +3257,6 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "276",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
     "id" : "426",
     "label" : {
       "IRI-based" : "Literal",
@@ -3262,7 +3265,23 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "428",
+    "id" : "277",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "427",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "429",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -3293,7 +3312,7 @@
       "en" : "A, possibly arbitrary, group of observations."
     },
     "attributes" : [ "external" ],
-    "id" : "429"
+    "id" : "430"
   }, {
     "iri" : "http://www.w3.org/ns/csvw#Column",
     "baseIri" : "http://www.w3.org/ns/csvw",
@@ -3303,11 +3322,11 @@
     },
     "subClasses" : [ "163" ],
     "attributes" : [ "external" ],
-    "id" : "300"
+    "id" : "301"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "432",
+    "id" : "242",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -3315,7 +3334,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "387",
+    "id" : "388",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -3339,7 +3358,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "224",
+    "id" : "228",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -3347,8 +3366,8 @@
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "257"
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "258"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
@@ -3376,7 +3395,7 @@
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "437"
   }, {
     "iri" : "https://kg.odissei.nl/.well-known/genid/5f487fed82cd9039c3905ee2142c0b7b",
@@ -3387,7 +3406,7 @@
     },
     "subClasses" : [ "43" ],
     "attributes" : [ "external" ],
-    "id" : "378"
+    "id" : "379"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Document",
     "equivalent" : [ "440", "32" ],
@@ -3459,7 +3478,7 @@
       "IRI-based" : "LegalDocument",
       "en" : "Legal Document"
     },
-    "subClasses" : [ "122", "283" ],
+    "subClasses" : [ "122", "284" ],
     "comment" : {
       "en" : "A legal document; for example, a court decision, a brief, and so forth."
     },
@@ -3539,7 +3558,7 @@
   }, {
     "instances" : 0,
     "union" : [ "117", "32" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "448"
   }, {
     "iri" : "http://purl.org/linked-data/cube#MeasureProperty",
@@ -3577,7 +3596,7 @@
     },
     "subClasses" : [ "41" ],
     "attributes" : [ "external" ],
-    "id" : "285"
+    "id" : "286"
   }, {
     "iri" : "http://purl.org/ontology/bibo/Note",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -3776,7 +3795,7 @@
       "undefined" : "A project (a collective endeavour of some kind)."
     },
     "attributes" : [ "external" ],
-    "id" : "337"
+    "id" : "338"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
@@ -3947,7 +3966,7 @@
       "en" : "A compilation of documents published from an event, such as a conference."
     },
     "attributes" : [ "external" ],
-    "id" : "327",
+    "id" : "328",
     "superClasses" : [ "51" ]
   }, {
     "iri" : "https://kg.odissei.nl/.well-known/genid/1115573aad1e9e5045f117b76bb63b67",
@@ -3995,8 +4014,8 @@
       "en" : "Draft legislation presented for discussion to a legal body."
     },
     "attributes" : [ "external" ],
-    "id" : "315",
-    "superClasses" : [ "283" ]
+    "id" : "316",
+    "superClasses" : [ "284" ]
   }, {
     "iri" : "http://purl.org/linked-data/cube#ComponentSpecification",
     "baseIri" : "http://purl.org/linked-data/cube",
@@ -4099,7 +4118,7 @@
       "en" : "A written communication addressed to a person or organization and transmitted electronically."
     },
     "attributes" : [ "external" ],
-    "id" : "309",
+    "id" : "310",
     "superClasses" : [ "54" ]
   }, {
     "iri" : "http://purl.org/ontology/bibo/Brief",
@@ -4202,7 +4221,7 @@
       "en" : "A periodical of scholarly journal Articles."
     },
     "attributes" : [ "external" ],
-    "id" : "228",
+    "id" : "225",
     "superClasses" : [ "30" ]
   }, {
     "iri" : "https://terms.codata.org/rdmt/research-software",
@@ -4224,6 +4243,7 @@
     "comment" : {
       "en" : "Statistical data type representing discrete units that cannot be ordered or measured."
     },
+    "attributes" : [ "external" ],
     "id" : "62",
     "superClasses" : [ "63" ]
   }, {
@@ -4406,7 +4426,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "117",
-    "superClasses" : [ "391" ]
+    "superClasses" : [ "392" ]
   }, {
     "iri" : "http://purl.org/ontology/bibo/LegalCaseDocument",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -4664,7 +4684,7 @@
       "en" : "A written or printed communication addressed to a person or organization and usually transmitted by mail."
     },
     "attributes" : [ "external" ],
-    "id" : "312",
+    "id" : "313",
     "superClasses" : [ "54" ]
   }, {
     "iri" : "http://purl.org/linked-data/cube#SliceKey",
@@ -4806,7 +4826,7 @@
     "id" : "11"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Agent",
-    "equivalent" : [ "247" ],
+    "equivalent" : [ "248" ],
     "baseIri" : "http://xmlns.com/foaf/0.1",
     "instances" : 0,
     "annotations" : {
@@ -4854,6 +4874,7 @@
     "comment" : {
       "en" : "Set of data."
     },
+    "attributes" : [ "external" ],
     "id" : "142",
     "superClasses" : [ "6", "141" ]
   }, {
@@ -4929,8 +4950,9 @@
     "comment" : {
       "en" : "Statistical data type representing ordered data measured over a numerical scale with equal distance between units."
     },
-    "id" : "293",
-    "superClasses" : [ "290" ]
+    "attributes" : [ "external" ],
+    "id" : "294",
+    "superClasses" : [ "291" ]
   }, {
     "iri" : "http://purl.org/ontology/bibo/Standard",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -4967,7 +4989,7 @@
       "en" : "A document describing a standard: a specification organized through a standards body."
     },
     "attributes" : [ "external" ],
-    "id" : "409",
+    "id" : "410",
     "superClasses" : [ "42" ]
   }, {
     "iri" : "http://schema.org/CreativeWork",
@@ -4980,7 +5002,7 @@
     "id" : "440"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Person",
-    "equivalent" : [ "395", "396" ],
+    "equivalent" : [ "396", "397" ],
     "baseIri" : "http://xmlns.com/foaf/0.1",
     "instances" : 0,
     "annotations" : {
@@ -5191,8 +5213,9 @@
     "comment" : {
       "en" : "Set of statistical data types can be observed and - or - categorised."
     },
+    "attributes" : [ "external" ],
     "id" : "63",
-    "superClasses" : [ "291" ]
+    "superClasses" : [ "292" ]
   }, {
     "iri" : "http://purl.org/ontology/bibo/Article",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -5412,7 +5435,7 @@
       "en" : "The academic degree of a Thesis"
     },
     "attributes" : [ "external" ],
-    "id" : "398"
+    "id" : "399"
   }, {
     "iri" : "http://purl.org/linked-data/cube#CodedProperty",
     "baseIri" : "http://purl.org/linked-data/cube",
@@ -5477,7 +5500,7 @@
       "en" : "A collection of legal cases."
     },
     "attributes" : [ "external" ],
-    "id" : "225",
+    "id" : "222",
     "superClasses" : [ "30" ]
   }, {
     "iri" : "http://purl.org/ontology/bibo/Issue",
@@ -5516,7 +5539,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "131",
-    "superClasses" : [ "132", "221", "43" ]
+    "superClasses" : [ "221", "132", "43" ]
   }, {
     "iri" : "https://terms.codata.org/rdmt/orcid",
     "baseIri" : "https://terms.codata.org/rdmt",
@@ -5552,7 +5575,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "9",
-    "superClasses" : [ "3", "429" ]
+    "superClasses" : [ "3", "430" ]
   }, {
     "iri" : "http://purl.org/linked-data/cube#ComponentProperty",
     "baseIri" : "http://purl.org/linked-data/cube",
@@ -5580,7 +5603,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "22",
-    "superClasses" : [ "298" ]
+    "superClasses" : [ "299" ]
   }, {
     "iri" : "http://purl.org/ontology/bibo/Website",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -5668,8 +5691,9 @@
     "comment" : {
       "en" : "Statistical data type representing ordered data with equal distance between units, where negative values are not allowed."
     },
-    "id" : "292",
-    "superClasses" : [ "290" ]
+    "attributes" : [ "external" ],
+    "id" : "293",
+    "superClasses" : [ "291" ]
   }, {
     "iri" : "http://purl.org/ontology/bibo/PersonalCommunicationDocument",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -5702,7 +5726,7 @@
       "IRI-based" : "PersonalCommunicationDocument",
       "en" : "Personal Communication Document"
     },
-    "subClasses" : [ "309", "312" ],
+    "subClasses" : [ "310", "313" ],
     "comment" : {
       "en" : "A personal communication manifested in some document."
     },
@@ -5760,12 +5784,12 @@
       "IRI-based" : "Legislation",
       "en" : "Legislation"
     },
-    "subClasses" : [ "315", "282" ],
+    "subClasses" : [ "316", "283" ],
     "comment" : {
       "en" : "A legal document proposing or enacting a law or a group of laws."
     },
     "attributes" : [ "external" ],
-    "id" : "283",
+    "id" : "284",
     "superClasses" : [ "50" ]
   }, {
     "iri" : "http://purl.org/ontology/bibo/Statute",
@@ -5803,8 +5827,8 @@
       "en" : "A bill enacted into law."
     },
     "attributes" : [ "external" ],
-    "id" : "282",
-    "superClasses" : [ "283" ]
+    "id" : "283",
+    "superClasses" : [ "284" ]
   }, {
     "iri" : "http://purl.org/ontology/bibo/Newspaper",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -5841,7 +5865,7 @@
       "en" : "A periodical of documents, usually issued daily or weekly, containing current news, editorials, feature articles, and usually advertising."
     },
     "attributes" : [ "external" ],
-    "id" : "227",
+    "id" : "224",
     "superClasses" : [ "30" ]
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Group",
@@ -6103,7 +6127,7 @@
     "id" : "219",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "222",
+    "id" : "226",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "229",
@@ -6134,10 +6158,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "241",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "242",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "243",
     "type" : "rdfs:SubClassOf"
@@ -6148,152 +6169,152 @@
     "id" : "245",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "246",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "101",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "248",
+    "id" : "249",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "250",
+    "id" : "251",
     "type" : "owl:objectProperty"
   }, {
     "id" : "153",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "252",
+    "id" : "253",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "269",
+    "id" : "270",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "271",
+    "id" : "272",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "273",
+    "id" : "274",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "275",
+    "id" : "276",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "281",
+    "id" : "282",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "295",
+    "id" : "296",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "296",
+    "id" : "297",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "299",
+    "id" : "300",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "301",
+    "id" : "302",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "198",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "304",
+    "id" : "305",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "306",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "307",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "308",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "311",
+    "id" : "309",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "314",
+    "id" : "312",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "316",
-    "type" : "owl:objectProperty"
+    "id" : "315",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "318",
+    "id" : "317",
     "type" : "owl:objectProperty"
   }, {
     "id" : "319",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "320",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "321",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "145",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "323",
+    "id" : "324",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "326",
+    "id" : "327",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "329",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "335",
+    "id" : "330",
     "type" : "owl:objectProperty"
   }, {
     "id" : "336",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "338",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "337",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "339",
     "type" : "owl:objectProperty"
   }, {
     "id" : "340",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "341",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "342",
+    "id" : "343",
     "type" : "owl:objectProperty"
   }, {
     "id" : "178",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "344",
+    "id" : "345",
     "type" : "owl:objectProperty"
   }, {
     "id" : "197",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "345",
-    "type" : "owl:disjointWith"
-  }, {
     "id" : "346",
     "type" : "owl:disjointWith"
   }, {
     "id" : "347",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "348",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "350",
-    "type" : "owl:disjointWith"
+    "id" : "349",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "351",
     "type" : "owl:disjointWith"
   }, {
     "id" : "352",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "353",
-    "type" : "owl:objectProperty"
+    "type" : "owl:allValuesFrom"
   }, {
-    "id" : "355",
-    "type" : "owl:disjointWith"
+    "id" : "354",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "356",
     "type" : "owl:disjointWith"
   }, {
     "id" : "357",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "358",
     "type" : "owl:allValuesFrom"
@@ -6301,59 +6322,59 @@
     "id" : "359",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "174",
-    "type" : "owl:objectProperty"
+    "id" : "360",
+    "type" : "owl:allValuesFrom"
   }, {
-    "id" : "363",
+    "id" : "174",
     "type" : "owl:objectProperty"
   }, {
     "id" : "364",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "366",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "368",
+    "id" : "365",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "371",
+    "id" : "367",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "380",
+    "id" : "369",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "372",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "381",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "386",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "397",
+    "id" : "382",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "399",
+    "id" : "387",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "398",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "400",
     "type" : "owl:objectProperty"
   }, {
     "id" : "13",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "404",
+    "id" : "405",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "410",
+    "id" : "411",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "412",
+    "id" : "413",
     "type" : "owl:objectProperty"
   }, {
     "id" : "218",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "414",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "415",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "416",
     "type" : "owl:objectProperty"
@@ -6361,16 +6382,19 @@
     "id" : "417",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "419",
+    "id" : "418",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "420",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "15",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "427",
+    "id" : "428",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "430",
+    "id" : "431",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "192",
@@ -6448,7 +6472,7 @@
     "id" : "468",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "365",
+    "id" : "366",
     "type" : "owl:objectProperty"
   }, {
     "id" : "148",
@@ -6469,7 +6493,7 @@
     "id" : "472",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "400",
+    "id" : "401",
     "type" : "owl:objectProperty"
   }, {
     "id" : "480",
@@ -6499,10 +6523,10 @@
     "id" : "486",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "422",
+    "id" : "423",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "354",
+    "id" : "355",
     "type" : "owl:objectProperty"
   }, {
     "id" : "487",
@@ -6541,7 +6565,7 @@
     "id" : "498",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "272",
+    "id" : "273",
     "type" : "owl:objectProperty"
   }, {
     "id" : "499",
@@ -6613,7 +6637,7 @@
     "id" : "520",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "324",
+    "id" : "325",
     "type" : "owl:objectProperty"
   }, {
     "id" : "521",
@@ -6673,7 +6697,7 @@
     "id" : "539",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "251",
+    "id" : "252",
     "type" : "owl:objectProperty"
   }, {
     "id" : "540",
@@ -6703,7 +6727,7 @@
     "id" : "548",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "431",
+    "id" : "432",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "488",
@@ -6716,15 +6740,15 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "551",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "274",
+    "id" : "275",
     "type" : "owl:objectProperty"
   }, {
     "id" : "552",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "411",
+    "id" : "412",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "553",
@@ -6758,12 +6782,12 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "561",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "563",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "369",
+    "id" : "370",
     "type" : "owl:objectProperty"
   }, {
     "id" : "564",
@@ -6805,7 +6829,7 @@
     "id" : "576",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "372",
+    "id" : "373",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "577",
@@ -6826,10 +6850,10 @@
     "id" : "583",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "270",
+    "id" : "271",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "367",
+    "id" : "368",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "12",
@@ -6841,17 +6865,17 @@
   "propertyAttribute" : [ {
     "range" : "3",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "1"
   }, {
     "range" : "3",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "5"
   }, {
     "range" : "3",
     "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "8"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#semanticRelation",
@@ -6903,22 +6927,22 @@
   }, {
     "range" : "19",
     "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "17"
   }, {
     "range" : "22",
     "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "21"
   }, {
     "range" : "22",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "24"
   }, {
     "range" : "22",
     "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "27"
   }, {
     "iri" : "http://purl.org/NET/c4dm/event.owl#agent",
@@ -7002,17 +7026,17 @@
       "IRI-based" : "date"
     },
     "domain" : "34",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "58"
   }, {
     "range" : "63",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "61"
   }, {
     "range" : "63",
     "domain" : "66",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "65"
   }, {
     "iri" : "http://purl.org/linked-data/cube#dataSet",
@@ -7044,47 +7068,47 @@
   }, {
     "range" : "48",
     "domain" : "70",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "69"
   }, {
     "range" : "46",
     "domain" : "73",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "72"
   }, {
     "range" : "77",
     "domain" : "76",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "75"
   }, {
     "range" : "77",
     "domain" : "84",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "83"
   }, {
     "range" : "77",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "86"
   }, {
     "range" : "77",
     "domain" : "91",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "90"
   }, {
     "range" : "77",
     "domain" : "94",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "93"
   }, {
     "range" : "77",
     "domain" : "96",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "95"
   }, {
     "range" : "18",
     "domain" : "98",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "97"
   }, {
     "iri" : "http://purl.org/NET/c4dm/event.owl#produced_in",
@@ -7133,7 +7157,7 @@
     "comment" : {
       "undefined" : "The given name of some person."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "102"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/dnaChecksum",
@@ -7171,7 +7195,7 @@
     "comment" : {
       "undefined" : "A checksum for the DNA of some thing. Joke."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "103"
   }, {
     "iri" : "http://purl.org/dc/terms/language",
@@ -7205,12 +7229,12 @@
       "IRI-based" : "issue"
     },
     "domain" : "34",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "107"
   }, {
     "range" : "111",
     "domain" : "110",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "109"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/yahooChatID",
@@ -7248,27 +7272,27 @@
     "comment" : {
       "undefined" : "A Yahoo chat ID"
     },
-    "attributes" : [ "external", "inverse functional", "object" ],
+    "attributes" : [ "inverse functional", "external", "object" ],
     "id" : "112"
   }, {
     "range" : "111",
     "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "114"
   }, {
     "range" : "117",
     "domain" : "116",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "115"
   }, {
     "range" : "117",
     "domain" : "119",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "118"
   }, {
     "range" : "122",
     "domain" : "121",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "120"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#inScheme",
@@ -7320,22 +7344,22 @@
   }, {
     "range" : "122",
     "domain" : "127",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "126"
   }, {
     "range" : "129",
     "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "128"
   }, {
     "range" : "132",
     "domain" : "131",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "130"
   }, {
     "range" : "135",
     "domain" : "134",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "133"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/givenname",
@@ -7384,17 +7408,17 @@
     "comment" : {
       "undefined" : "The given name of some person."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "136"
   }, {
     "range" : "138",
     "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "137"
   }, {
     "range" : "111",
     "domain" : "140",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "139"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
@@ -7434,7 +7458,7 @@
     "comment" : {
       "undefined" : "A document that this thing is the primary topic of."
     },
-    "attributes" : [ "external", "inverse functional", "object" ],
+    "attributes" : [ "inverse functional", "external", "object" ],
     "id" : "143"
   }, {
     "iri" : "http://purl.org/linked-data/cube#dimension",
@@ -7517,37 +7541,37 @@
   }, {
     "range" : "117",
     "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "154"
   }, {
     "range" : "40",
     "domain" : "156",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "155"
   }, {
     "range" : "57",
     "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "157"
   }, {
     "range" : "80",
     "domain" : "159",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "158"
   }, {
     "range" : "161",
     "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "160"
   }, {
     "range" : "79",
     "domain" : "163",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "162"
   }, {
     "range" : "166",
     "domain" : "165",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "164"
   }, {
     "iri" : "http://purl.org/ontology/bibo/shortDescription",
@@ -7557,17 +7581,17 @@
       "IRI-based" : "shortDescription"
     },
     "domain" : "32",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "167"
   }, {
     "range" : "166",
     "domain" : "170",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "169"
   }, {
     "range" : "166",
     "domain" : "172",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "171"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#exactMatch",
@@ -7606,12 +7630,12 @@
     "comment" : {
       "en" : "skos:exactMatch is disjoint with each of the properties skos:broadMatch and skos:relatedMatch."
     },
-    "attributes" : [ "symmetric", "external", "object", "transitive" ],
+    "attributes" : [ "external", "symmetric", "object", "transitive" ],
     "id" : "173"
   }, {
     "range" : "176",
     "domain" : "159",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "175"
   }, {
     "iri" : "http://prismstandard.org/namespaces/1.2/basic/startingPage",
@@ -7622,12 +7646,12 @@
       "IRI-based" : "startingPage"
     },
     "domain" : "34",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "177"
   }, {
     "range" : "117",
     "domain" : "180",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "179"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/title",
@@ -7665,7 +7689,7 @@
     "comment" : {
       "undefined" : "Title (Mr, Mrs, Ms, Dr. etc)"
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "181"
   }, {
     "iri" : "http://purl.org/ontology/bibo/isbn10",
@@ -7675,7 +7699,7 @@
       "IRI-based" : "isbn10"
     },
     "domain" : "184",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "183"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/account",
@@ -7723,7 +7747,7 @@
       "IRI-based" : "isbn13"
     },
     "domain" : "188",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "187"
   }, {
     "iri" : "http://purl.org/ontology/bibo/edition",
@@ -7762,7 +7786,7 @@
     "comment" : {
       "en" : "The name defining a special edition of a document. Normally its a literal value composed of a version number and words."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "190"
   }, {
     "iri" : "http://purl.org/ontology/bibo/authorList",
@@ -7845,27 +7869,27 @@
       "IRI-based" : "oclcnum"
     },
     "domain" : "202",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "201"
   }, {
     "range" : "32",
     "domain" : "48",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "204"
   }, {
     "range" : "32",
     "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "205"
   }, {
     "range" : "32",
     "domain" : "50",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "206"
   }, {
     "range" : "32",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "207"
   }, {
     "iri" : "http://purl.org/linked-data/cube#attribute",
@@ -7903,7 +7927,7 @@
       "IRI-based" : "coden"
     },
     "domain" : "212",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "211"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/tipjar",
@@ -8017,12 +8041,12 @@
     "comment" : {
       "en" : "The abbreviation of a title."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "219"
   }, {
     "iri" : "http://purl.org/ontology/bibo/uri",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "224",
+    "range" : "228",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -8051,12 +8075,12 @@
       "IRI-based" : "uri",
       "en" : "uri"
     },
-    "domain" : "223",
+    "domain" : "227",
     "comment" : {
       "en" : "Universal Resource Identifier of a document"
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "222"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "226"
   }, {
     "iri" : "http://purl.org/ontology/bibo/pages",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -8093,7 +8117,7 @@
     "comment" : {
       "en" : "A string of non-contiguous page spans that locate a Document within a Collection. Example: 23-25, 34, 54-56. For continuous page ranges, use the pageStart and pageEnd properties."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "229"
   }, {
     "iri" : "http://purl.org/linked-data/cube#measureType",
@@ -8125,42 +8149,42 @@
   }, {
     "range" : "32",
     "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "233"
   }, {
     "range" : "32",
     "domain" : "44",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "234"
   }, {
     "range" : "32",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "235"
   }, {
     "range" : "32",
     "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "236"
   }, {
     "range" : "32",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "238"
   }, {
     "range" : "32",
     "domain" : "47",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "239"
   }, {
     "range" : "32",
     "domain" : "38",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "240"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/aimChatID",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "4",
+    "range" : "242",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -8189,36 +8213,36 @@
       "IRI-based" : "aimChatID",
       "undefined" : "AIM chat ID"
     },
-    "domain" : "111",
+    "domain" : "34",
     "comment" : {
       "undefined" : "An AIM chat ID"
     },
-    "attributes" : [ "external", "inverse functional", "object" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "241"
   }, {
     "range" : "32",
     "domain" : "39",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "242"
-  }, {
-    "range" : "32",
-    "domain" : "40",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "243"
   }, {
     "range" : "32",
-    "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "244"
   }, {
     "range" : "32",
-    "domain" : "42",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "245"
+  }, {
+    "range" : "32",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "246"
   }, {
     "iri" : "http://purl.org/ontology/bibo/presentedAt",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "246",
+    "range" : "247",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -8257,7 +8281,7 @@
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#notation",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
-    "range" : "249",
+    "range" : "250",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -8298,8 +8322,8 @@
       "en" : "notation"
     },
     "domain" : "34",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "248"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "249"
   }, {
     "iri" : "http://purl.org/ontology/bibo/reproducedIn",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -8331,13 +8355,13 @@
     "label" : {
       "IRI-based" : "reproducedIn"
     },
-    "superproperty" : [ "251" ],
+    "superproperty" : [ "252" ],
     "domain" : "32",
     "comment" : {
       "en" : "The resource in which another resource is reproduced."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "250"
+    "id" : "251"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/img",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -8380,7 +8404,7 @@
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/sha1",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "253",
+    "range" : "254",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -8413,11 +8437,11 @@
     "comment" : {
       "undefined" : "A sha1sum hash, in hex."
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "252"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "253"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/made",
-    "inverse" : "270",
+    "inverse" : "271",
     "baseIri" : "http://xmlns.com/foaf/0.1",
     "range" : "4",
     "annotations" : {
@@ -8453,7 +8477,7 @@
       "undefined" : "Something that was made by this agent."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "269"
+    "id" : "270"
   }, {
     "iri" : "http://purl.org/dc/terms/publisher",
     "baseIri" : "http://purl.org/dc/terms",
@@ -8475,9 +8499,9 @@
       "IRI-based" : "publisher"
     },
     "domain" : "34",
-    "subproperty" : [ "272" ],
+    "subproperty" : [ "273" ],
     "attributes" : [ "external", "object" ],
-    "id" : "271"
+    "id" : "272"
   }, {
     "iri" : "http://purl.org/ontology/bibo/affirmedBy",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -8498,17 +8522,17 @@
     "label" : {
       "IRI-based" : "affirmedBy"
     },
-    "superproperty" : [ "274" ],
+    "superproperty" : [ "275" ],
     "domain" : "121",
     "comment" : {
       "en" : "A legal decision that affirms a ruling."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "273"
+    "id" : "274"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/familyName",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "276",
+    "range" : "277",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -8541,29 +8565,18 @@
     "comment" : {
       "undefined" : "The family name of some person."
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "275"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "276"
   }, {
-    "range" : "283",
-    "domain" : "282",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "281"
+    "range" : "284",
+    "domain" : "283",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "282"
   }, {
     "iri" : "http://purl.org/dc/terms/format",
     "baseIri" : "http://purl.org/dc/terms",
     "range" : "34",
     "annotations" : {
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "<dcterms:format>\n   <dcterms:MediaTypeOrExtent>\n     <rdf:value>text/html</rdf:value>\n     <rdfs:label>HTML</rdfs:label>\n   </dcterms:MediaTypeOrExtent>\n </dcterms:format>",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "<dcterms:format>\n   <dcterms:MediaTypeOrExtent>\n     <rdf:value>text/html</rdf:value>\n     <rdfs:label>HTML</rdfs:label>\n   </dcterms:MediaTypeOrExtent>\n </dcterms:format>",
-        "type" : "label"
-      } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
@@ -8574,6 +8587,17 @@
         "language" : "en",
         "value" : "Used to describe the format of a bibliographic resource.",
         "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "<dcterms:format>\n   <dcterms:MediaTypeOrExtent>\n     <rdf:value>text/html</rdf:value>\n     <rdfs:label>HTML</rdfs:label>\n   </dcterms:MediaTypeOrExtent>\n </dcterms:format>",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "<dcterms:format>\n   <dcterms:MediaTypeOrExtent>\n     <rdf:value>text/html</rdf:value>\n     <rdfs:label>HTML</rdfs:label>\n   </dcterms:MediaTypeOrExtent>\n </dcterms:format>",
+        "type" : "label"
       } ]
     },
     "label" : {
@@ -8581,7 +8605,7 @@
     },
     "domain" : "34",
     "attributes" : [ "external", "object" ],
-    "id" : "295"
+    "id" : "296"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/myersBriggs",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -8618,8 +8642,8 @@
     "comment" : {
       "undefined" : "A Myers Briggs (MBTI) personality classification."
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "296"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "297"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#memberList",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
@@ -8656,12 +8680,12 @@
     "comment" : {
       "en" : "For any resource, every item in the list given as the value of the\n      skos:memberList property is also a value of the skos:member property."
     },
-    "attributes" : [ "functional", "external", "object" ],
-    "id" : "299"
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "300"
   }, {
     "iri" : "http://purl.org/ontology/bibo/argued",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "302",
+    "range" : "303",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -8694,12 +8718,12 @@
     "comment" : {
       "en" : "The date on which a legal case is argued before a court. Date is of format xsd:date"
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "301"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "302"
   }, {
     "iri" : "http://purl.org/ontology/bibo/reviewOf",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "303",
+    "range" : "304",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -8738,7 +8762,7 @@
   }, {
     "iri" : "http://purl.org/linked-data/cube#componentRequired",
     "baseIri" : "http://purl.org/linked-data/cube",
-    "range" : "305",
+    "range" : "306",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -8760,8 +8784,8 @@
     "comment" : {
       "en" : "Indicates whether a component property is required (true) or optional (false) in the context of a DSD. Only applicable\n    to components correspond to an attribute. Defaults to false (optional)."
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "304"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "305"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/publications",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -8799,27 +8823,27 @@
       "undefined" : "A link to the publications of this person."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "306"
+    "id" : "307"
   }, {
     "range" : "22",
     "domain" : "210",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "307"
-  }, {
-    "range" : "54",
-    "domain" : "309",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "308"
   }, {
     "range" : "54",
-    "domain" : "312",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "311"
+    "domain" : "310",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "309"
   }, {
-    "range" : "283",
-    "domain" : "315",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "314"
+    "range" : "54",
+    "domain" : "313",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "312"
+  }, {
+    "range" : "284",
+    "domain" : "316",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "315"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/interest",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -8857,7 +8881,7 @@
       "undefined" : "A page about a topic of interest to this person."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "316"
+    "id" : "317"
   }, {
     "iri" : "http://purl.org/linked-data/cube#sliceKey",
     "baseIri" : "http://purl.org/linked-data/cube",
@@ -8884,11 +8908,11 @@
       "en" : "indicates a slice key which is used for slices in this dataset"
     },
     "attributes" : [ "external", "object" ],
-    "id" : "318"
+    "id" : "319"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/nick",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "284",
+    "range" : "285",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -8921,18 +8945,18 @@
     "comment" : {
       "undefined" : "A short informal nickname characterising an agent (includes login identifiers, IRC and other chat nicknames)."
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "319"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "320"
   }, {
     "iri" : "http://purl.org/ontology/bibo/eanucc13",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "322",
+    "range" : "323",
     "label" : {
       "IRI-based" : "eanucc13"
     },
-    "domain" : "321",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "320"
+    "domain" : "322",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "321"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/openid",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -8970,7 +8994,7 @@
     "comment" : {
       "undefined" : "An OpenID for an Agent."
     },
-    "attributes" : [ "external", "inverse functional", "object" ],
+    "attributes" : [ "inverse functional", "external", "object" ],
     "id" : "145"
   }, {
     "iri" : "http://purl.org/dc/terms/isVersionOf",
@@ -8980,13 +9004,13 @@
       "IRI-based" : "isVersionOf"
     },
     "domain" : "34",
-    "subproperty" : [ "324" ],
+    "subproperty" : [ "325" ],
     "attributes" : [ "external", "object" ],
-    "id" : "323"
+    "id" : "324"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/pastProject",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "288",
+    "range" : "289",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -9020,7 +9044,7 @@
       "undefined" : "A project this person has previously worked on."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "326"
+    "id" : "327"
   }, {
     "iri" : "http://purl.org/dc/terms/subject",
     "baseIri" : "http://purl.org/dc/terms",
@@ -9043,7 +9067,7 @@
     },
     "domain" : "34",
     "attributes" : [ "external", "object" ],
-    "id" : "329"
+    "id" : "330"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/theme",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -9081,12 +9105,12 @@
       "undefined" : "A theme."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "335"
-  }, {
-    "range" : "337",
-    "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
     "id" : "336"
+  }, {
+    "range" : "338",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "337"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/knows",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -9124,7 +9148,7 @@
       "undefined" : "A person known by this person (indicating some level of reciprocated interaction between the parties)."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "338"
+    "id" : "339"
   }, {
     "iri" : "http://purl.org/ontology/bibo/organizer",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -9162,11 +9186,11 @@
       "en" : "The organizer of an event; includes conference organizers, but also government agencies or other bodies that are responsible for conducting hearings."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "339"
+    "id" : "340"
   }, {
     "iri" : "http://purl.org/ontology/bibo/abstract",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "341",
+    "range" : "342",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -9195,12 +9219,12 @@
       "IRI-based" : "abstract",
       "undefined" : "abstract"
     },
-    "domain" : "303",
+    "domain" : "304",
     "comment" : {
       "undefined" : "A summary of the resource."
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "340"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "341"
   }, {
     "iri" : "http://purl.org/linked-data/cube#measure",
     "baseIri" : "http://purl.org/linked-data/cube",
@@ -9228,12 +9252,12 @@
       "en" : "An alternative to qb:componentProperty which makes explicit that the component is a measure"
     },
     "attributes" : [ "external", "object" ],
-    "id" : "342"
+    "id" : "343"
   }, {
     "iri" : "http://purl.org/ontology/bibo/pageStart",
     "equivalent" : [ "177" ],
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "343",
+    "range" : "344",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -9266,7 +9290,7 @@
     "comment" : {
       "en" : "Starting page number within a continuous page range."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "178"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/phone",
@@ -9305,11 +9329,11 @@
       "undefined" : "A phone,  specified using fully qualified tel: URI scheme (refs: http://www.w3.org/Addressing/schemes.html#tel)."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "344"
+    "id" : "345"
   }, {
     "iri" : "http://purl.org/ontology/bibo/transcriptOf",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "303",
+    "range" : "304",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -9346,15 +9370,15 @@
     "attributes" : [ "external", "object" ],
     "id" : "197"
   }, {
-    "range" : "337",
-    "domain" : "37",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "345"
-  }, {
     "range" : "110",
     "domain" : "37",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "346"
+  }, {
+    "range" : "338",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "347"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/primaryTopic",
     "inverse" : "143",
@@ -9392,12 +9416,12 @@
     "comment" : {
       "undefined" : "The primary topic of some page or document."
     },
-    "attributes" : [ "functional", "external", "object" ],
-    "id" : "347"
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "348"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/gender",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "349",
+    "range" : "350",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -9430,18 +9454,18 @@
     "comment" : {
       "undefined" : "The gender of this Agent (typically but not necessarily 'male' or 'female')."
     },
-    "attributes" : [ "functional", "datatype", "external" ],
-    "id" : "348"
+    "attributes" : [ "external", "datatype", "functional" ],
+    "id" : "349"
   }, {
     "range" : "36",
     "domain" : "110",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "350"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "351"
   }, {
     "range" : "11",
     "domain" : "57",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "351"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "352"
   }, {
     "iri" : "http://purl.org/dc/terms/hasPart",
     "baseIri" : "http://purl.org/dc/terms",
@@ -9451,7 +9475,7 @@
     },
     "domain" : "180",
     "attributes" : [ "allValues", "external", "object" ],
-    "id" : "352"
+    "id" : "353"
   }, {
     "iri" : "http://purl.org/ontology/bibo/presents",
     "inverse" : "101",
@@ -9485,23 +9509,23 @@
       "IRI-based" : "presents",
       "en" : "presents"
     },
-    "superproperty" : [ "354" ],
-    "domain" : "246",
+    "superproperty" : [ "355" ],
+    "domain" : "247",
     "comment" : {
       "en" : "Relates an event to associated documents; for example, conference to a paper."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "353"
+    "id" : "354"
   }, {
     "range" : "124",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "355"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "356"
   }, {
     "range" : "124",
     "domain" : "57",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "356"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "357"
   }, {
     "iri" : "http://purl.org/dc/terms/hasPart",
     "baseIri" : "http://purl.org/dc/terms",
@@ -9511,17 +9535,17 @@
     },
     "domain" : "30",
     "attributes" : [ "allValues", "external", "object" ],
-    "id" : "357"
+    "id" : "358"
   }, {
     "iri" : "http://purl.org/dc/terms/hasPart",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "287",
+    "range" : "288",
     "label" : {
       "IRI-based" : "hasPart"
     },
     "domain" : "47",
     "attributes" : [ "allValues", "external", "object" ],
-    "id" : "358"
+    "id" : "359"
   }, {
     "iri" : "http://purl.org/dc/terms/hasPart",
     "baseIri" : "http://purl.org/dc/terms",
@@ -9531,7 +9555,7 @@
     },
     "domain" : "119",
     "attributes" : [ "allValues", "external", "object" ],
-    "id" : "359"
+    "id" : "360"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#closeMatch",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
@@ -9567,12 +9591,12 @@
     "superproperty" : [ "15" ],
     "domain" : "34",
     "subproperty" : [ "173" ],
-    "attributes" : [ "symmetric", "external", "object" ],
+    "attributes" : [ "external", "symmetric", "object" ],
     "id" : "174"
   }, {
     "iri" : "http://purl.org/linked-data/cube#parentChildProperty",
     "baseIri" : "http://purl.org/linked-data/cube",
-    "range" : "298",
+    "range" : "299",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -9595,7 +9619,7 @@
       "en" : "Specifies a property which relates a parent concept in the hierarchy to a child concept."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "363"
+    "id" : "364"
   }, {
     "iri" : "http://purl.org/ontology/bibo/translator",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -9628,24 +9652,24 @@
       "IRI-based" : "translator",
       "undefined" : "translator"
     },
-    "superproperty" : [ "365" ],
-    "domain" : "317",
+    "superproperty" : [ "366" ],
+    "domain" : "318",
     "comment" : {
       "en" : "A person who translates written document from one language to another."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "364"
+    "id" : "365"
   }, {
     "iri" : "http://purl.org/ontology/bibo/isbn",
-    "equivalent" : [ "367" ],
+    "equivalent" : [ "368" ],
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "279",
+    "range" : "280",
     "label" : {
       "IRI-based" : "isbn"
     },
     "domain" : "34",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "366"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "367"
   }, {
     "iri" : "http://purl.org/linked-data/cube#slice",
     "baseIri" : "http://purl.org/linked-data/cube",
@@ -9667,24 +9691,24 @@
       "IRI-based" : "slice",
       "en" : "slice"
     },
-    "superproperty" : [ "369" ],
+    "superproperty" : [ "370" ],
     "domain" : "6",
     "comment" : {
       "en" : "Indicates a subset of a DataSet defined by fixing a subset of the dimensional values"
     },
     "attributes" : [ "external", "object" ],
-    "id" : "368"
+    "id" : "369"
   }, {
     "iri" : "http://prismstandard.org/namespaces/1.2/basic/eIssn",
-    "equivalent" : [ "372" ],
+    "equivalent" : [ "373" ],
     "baseIri" : "http://prismstandard.org/namespaces/1.2/basic",
-    "range" : "280",
+    "range" : "281",
     "label" : {
       "IRI-based" : "eIssn"
     },
     "domain" : "34",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "371"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "372"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/fundedBy",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -9722,7 +9746,7 @@
       "undefined" : "An organization funding a project or person."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "380"
+    "id" : "381"
   }, {
     "iri" : "http://purl.org/ontology/bibo/director",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -9755,17 +9779,17 @@
       "IRI-based" : "director",
       "undefined" : "director"
     },
-    "superproperty" : [ "365" ],
+    "superproperty" : [ "366" ],
     "domain" : "40",
     "comment" : {
       "en" : "A Film director."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "381"
+    "id" : "382"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/age",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "387",
+    "range" : "388",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -9798,12 +9822,12 @@
     "comment" : {
       "undefined" : "The age in years of some agent."
     },
-    "attributes" : [ "functional", "datatype", "external" ],
-    "id" : "386"
+    "attributes" : [ "external", "datatype", "functional" ],
+    "id" : "387"
   }, {
     "iri" : "http://purl.org/ontology/bibo/degree",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "398",
+    "range" : "399",
     "annotations" : {
       "editorialNote" : [ {
         "identifier" : "editorialNote",
@@ -9848,7 +9872,7 @@
       "en" : "The thesis degree."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "397"
+    "id" : "398"
   }, {
     "iri" : "http://purl.org/dc/terms/references",
     "baseIri" : "http://purl.org/dc/terms",
@@ -9857,9 +9881,9 @@
       "IRI-based" : "references"
     },
     "domain" : "34",
-    "subproperty" : [ "400" ],
+    "subproperty" : [ "401" ],
     "attributes" : [ "external", "object" ],
-    "id" : "399"
+    "id" : "400"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#broaderTransitive",
     "inverse" : "12",
@@ -9912,7 +9936,7 @@
   }, {
     "iri" : "http://purl.org/ontology/bibo/editorList",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "333",
+    "range" : "334",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -9947,18 +9971,18 @@
       "en" : "An ordered list of editors. Normally, this list is seen as a priority list that order editors by importance."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "404"
+    "id" : "405"
   }, {
     "iri" : "http://prismstandard.org/namespaces/1.2/basic/doi",
-    "equivalent" : [ "411" ],
+    "equivalent" : [ "412" ],
     "baseIri" : "http://prismstandard.org/namespaces/1.2/basic",
-    "range" : "265",
+    "range" : "266",
     "label" : {
       "IRI-based" : "doi"
     },
     "domain" : "34",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "410"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "411"
   }, {
     "iri" : "http://purl.org/ontology/bibo/reversedBy",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -9979,13 +10003,13 @@
     "label" : {
       "IRI-based" : "reversedBy"
     },
-    "superproperty" : [ "274" ],
+    "superproperty" : [ "275" ],
     "domain" : "121",
     "comment" : {
       "en" : "A legal decision that reverses a ruling."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "412"
+    "id" : "413"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#broader",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
@@ -10040,7 +10064,7 @@
   }, {
     "iri" : "http://purl.org/ontology/bibo/numPages",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "407",
+    "range" : "408",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -10073,8 +10097,8 @@
     "comment" : {
       "en" : "The number of pages contained in a document"
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "414"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "415"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/holdsAccount",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -10112,7 +10136,7 @@
       "undefined" : "Indicates an account held by this agent."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "415"
+    "id" : "416"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/thumbnail",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -10150,7 +10174,7 @@
       "undefined" : "A derived thumbnail image."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "416"
+    "id" : "417"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/weblog",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -10188,12 +10212,12 @@
     "comment" : {
       "undefined" : "A weblog of some thing (whether person, group, company etc.)."
     },
-    "attributes" : [ "external", "inverse functional", "object" ],
-    "id" : "417"
+    "attributes" : [ "inverse functional", "external", "object" ],
+    "id" : "418"
   }, {
     "iri" : "http://purl.org/dc/terms/description",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "266",
+    "range" : "267",
     "annotations" : {
       "scopeNote" : [ {
         "identifier" : "scopeNote",
@@ -10211,8 +10235,8 @@
       "IRI-based" : "description"
     },
     "domain" : "34",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "419"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "420"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#mappingRelation",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
@@ -10247,7 +10271,7 @@
     },
     "superproperty" : [ "10" ],
     "domain" : "34",
-    "subproperty" : [ "174", "422", "217", "216" ],
+    "subproperty" : [ "174", "423", "217", "216" ],
     "comment" : {
       "en" : "These concept mapping relations mirror semantic relations, and the data model defined below is similar (with the exception of skos:exactMatch) to the data model defined for semantic relations. A distinct vocabulary is provided for concept mapping relations, to provide a convenient way to differentiate links within a concept scheme from links between concept schemes. However, this pattern of usage is not a formal requirement of the SKOS data model, and relies on informal definitions of best practice."
     },
@@ -10290,44 +10314,44 @@
       "en" : "An agent that receives a communication document."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "427"
+    "id" : "428"
   }, {
     "iri" : "http://prismstandard.org/namespaces/1.2/basic/issn",
-    "equivalent" : [ "431" ],
+    "equivalent" : [ "432" ],
     "baseIri" : "http://prismstandard.org/namespaces/1.2/basic",
-    "range" : "267",
+    "range" : "268",
     "label" : {
       "IRI-based" : "issn"
     },
     "domain" : "34",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "430"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "431"
   }, {
     "iri" : "http://prismstandard.org/namespaces/1.2/basic/edition",
     "equivalent" : [ "190" ],
     "baseIri" : "http://prismstandard.org/namespaces/1.2/basic",
-    "range" : "268",
+    "range" : "269",
     "label" : {
       "IRI-based" : "edition"
     },
     "domain" : "34",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "192"
   }, {
     "iri" : "http://purl.org/ontology/bibo/gtin14",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "373",
+    "range" : "374",
     "label" : {
       "IRI-based" : "gtin14"
     },
-    "domain" : "374",
-    "attributes" : [ "datatype", "external" ],
+    "domain" : "375",
+    "attributes" : [ "external", "datatype" ],
     "id" : "438"
   }, {
     "iri" : "http://purl.org/ontology/bibo/issue",
     "equivalent" : [ "107" ],
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "420",
+    "range" : "421",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -10360,12 +10384,12 @@
     "comment" : {
       "en" : "An issue number"
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "108"
   }, {
     "iri" : "http://purl.org/linked-data/cube#codeList",
     "baseIri" : "http://purl.org/linked-data/cube",
-    "range" : "334",
+    "range" : "335",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -10392,7 +10416,7 @@
   }, {
     "iri" : "http://purl.org/ontology/bibo/status",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "413",
+    "range" : "414",
     "annotations" : {
       "editorialNote" : [ {
         "identifier" : "editorialNote",
@@ -10475,7 +10499,7 @@
     "comment" : {
       "en" : "A volume number"
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "443"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/workplaceHomepage",
@@ -10518,12 +10542,12 @@
   }, {
     "iri" : "http://purl.org/ontology/bibo/lccn",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "405",
+    "range" : "406",
     "label" : {
       "IRI-based" : "lccn"
     },
-    "domain" : "406",
-    "attributes" : [ "datatype", "external" ],
+    "domain" : "407",
+    "attributes" : [ "external", "datatype" ],
     "id" : "449"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#narrower",
@@ -10580,7 +10604,7 @@
   }, {
     "iri" : "http://purl.org/ontology/bibo/contributorList",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "255",
+    "range" : "256",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -10610,7 +10634,7 @@
       "en" : "list of contributors"
     },
     "domain" : "32",
-    "subproperty" : [ "193", "404" ],
+    "subproperty" : [ "193", "405" ],
     "comment" : {
       "en" : "An ordered list of contributors. Normally, this list is seen as a priority list that order contributors by importance."
     },
@@ -10652,7 +10676,7 @@
     "comment" : {
       "en" : "The suffix of a name"
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "451"
   }, {
     "iri" : "http://schemas.talis.com/2005/address/schema#localityName",
@@ -10675,7 +10699,7 @@
       "IRI-based" : "localityName"
     },
     "domain" : "34",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "452"
   }, {
     "iri" : "http://purl.org/ontology/bibo/interviewee",
@@ -10709,7 +10733,7 @@
       "IRI-based" : "interviewee",
       "undefined" : "interviewee"
     },
-    "superproperty" : [ "365" ],
+    "superproperty" : [ "366" ],
     "domain" : "111",
     "comment" : {
       "en" : "An agent that is interviewed by another agent."
@@ -10750,11 +10774,11 @@
     },
     "superproperty" : [ "10" ],
     "domain" : "34",
-    "subproperty" : [ "422" ],
+    "subproperty" : [ "423" ],
     "comment" : {
       "en" : "skos:related is disjoint with skos:broaderTransitive"
     },
-    "attributes" : [ "symmetric", "external", "object" ],
+    "attributes" : [ "external", "symmetric", "object" ],
     "id" : "14"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/based_near",
@@ -10839,7 +10863,7 @@
       "undefined" : "page"
     },
     "domain" : "20",
-    "subproperty" : [ "143", "215", "417", "146" ],
+    "subproperty" : [ "143", "215", "418", "146" ],
     "comment" : {
       "undefined" : "A page or document about this thing."
     },
@@ -10866,7 +10890,7 @@
       "IRI-based" : "created"
     },
     "domain" : "34",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "457"
   }, {
     "iri" : "http://purl.org/ontology/bibo/interviewer",
@@ -10900,7 +10924,7 @@
       "IRI-based" : "interviewer",
       "undefined" : "interviewer"
     },
-    "superproperty" : [ "365" ],
+    "superproperty" : [ "366" ],
     "domain" : "111",
     "comment" : {
       "en" : "An agent that interview another agent."
@@ -10943,7 +10967,7 @@
     "comment" : {
       "undefined" : "A name for some thing."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "461"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/icqChatID",
@@ -10981,7 +11005,7 @@
     "comment" : {
       "undefined" : "An ICQ chat ID"
     },
-    "attributes" : [ "external", "inverse functional", "object" ],
+    "attributes" : [ "inverse functional", "external", "object" ],
     "id" : "463"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
@@ -11022,7 +11046,7 @@
   }, {
     "iri" : "http://purl.org/ontology/bibo/content",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "377",
+    "range" : "378",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -11066,12 +11090,12 @@
     "comment" : {
       "en" : "This property is for a plain-text rendering of the content of a Document. While the plain-text content of an entire document could be described by this property."
     },
-    "attributes" : [ "deprecated", "datatype", "external" ],
+    "attributes" : [ "external", "datatype", "deprecated" ],
     "id" : "465"
   }, {
     "iri" : "http://purl.org/ontology/bibo/prefixName",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "394",
+    "range" : "395",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -11104,12 +11128,12 @@
     "comment" : {
       "en" : "The prefix of a name"
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "466"
   }, {
     "iri" : "http://purl.org/ontology/bibo/chapter",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "384",
+    "range" : "385",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -11142,12 +11166,12 @@
     "comment" : {
       "en" : "An chapter number"
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "467"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/family_name",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "428",
+    "range" : "429",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -11191,7 +11215,7 @@
     "comment" : {
       "undefined" : "The family name of some person."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "468"
   }, {
     "iri" : "http://purl.org/dc/terms/contributor",
@@ -11214,9 +11238,9 @@
       "IRI-based" : "contributor"
     },
     "domain" : "34",
-    "subproperty" : [ "469", "470", "458", "364", "381", "454" ],
+    "subproperty" : [ "469", "470", "458", "365", "382", "454" ],
     "attributes" : [ "external", "object" ],
-    "id" : "365"
+    "id" : "366"
   }, {
     "iri" : "http://purl.org/linked-data/cube#componentProperty",
     "baseIri" : "http://purl.org/linked-data/cube",
@@ -11239,7 +11263,7 @@
       "en" : "component"
     },
     "domain" : "78",
-    "subproperty" : [ "147", "472", "208", "342" ],
+    "subproperty" : [ "147", "472", "208", "343" ],
     "comment" : {
       "en" : "indicates a ComponentProperty (i.e. attribute/dimension) expected on a DataSet, or a dimension fixed in a SliceKey"
     },
@@ -11287,12 +11311,12 @@
     "iri" : "http://prismstandard.org/namespaces/1.2/basic/number",
     "equivalent" : [ "475" ],
     "baseIri" : "http://prismstandard.org/namespaces/1.2/basic",
-    "range" : "310",
+    "range" : "311",
     "label" : {
       "IRI-based" : "number"
     },
     "domain" : "34",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "474"
   }, {
     "iri" : "http://purl.org/linked-data/cube#componentAttachment",
@@ -11324,7 +11348,7 @@
   }, {
     "iri" : "http://purl.org/dc/terms/issued",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "313",
+    "range" : "314",
     "annotations" : {
       "scopeNote" : [ {
         "identifier" : "scopeNote",
@@ -11342,7 +11366,7 @@
       "IRI-based" : "issued"
     },
     "domain" : "34",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "478"
   }, {
     "iri" : "http://purl.org/linked-data/cube#measureDimension",
@@ -11404,16 +11428,16 @@
       "IRI-based" : "cites",
       "en" : "cites"
     },
-    "superproperty" : [ "399" ],
-    "domain" : "258",
+    "superproperty" : [ "400" ],
+    "domain" : "259",
     "comment" : {
-      "en" : "Relates a document to another document that is cited\nby the first document as reference, comment, review, quotation or for\nanother purpose."
+      "en" : "Relates a document to another document that is cited by the first document as reference, comment, review, quotation or for another purpose."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "400"
+    "id" : "401"
   }, {
     "iri" : "http://purl.org/ontology/bibo/citedBy",
-    "inverse" : "400",
+    "inverse" : "401",
     "baseIri" : "http://purl.org/ontology/bibo",
     "range" : "32",
     "annotations" : {
@@ -11486,7 +11510,7 @@
     "comment" : {
       "undefined" : "A Skype ID"
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "481"
   }, {
     "iri" : "http://purl.org/NET/c4dm/event.owl#sub_event",
@@ -11543,7 +11567,7 @@
       "IRI-based" : "distributor",
       "en" : "distributor"
     },
-    "domain" : "331",
+    "domain" : "332",
     "comment" : {
       "en" : "Distributor of a document or a collection of documents."
     },
@@ -11552,12 +11576,12 @@
   }, {
     "iri" : "http://purl.org/ontology/bibo/pmid",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "390",
+    "range" : "391",
     "label" : {
       "IRI-based" : "pmid"
     },
-    "domain" : "392",
-    "attributes" : [ "datatype", "external" ],
+    "domain" : "393",
+    "attributes" : [ "external", "datatype" ],
     "id" : "484"
   }, {
     "iri" : "http://purl.org/ontology/bibo/editor",
@@ -11591,8 +11615,8 @@
       "IRI-based" : "editor",
       "undefined" : "editor"
     },
-    "superproperty" : [ "365" ],
-    "domain" : "330",
+    "superproperty" : [ "366" ],
+    "domain" : "331",
     "comment" : {
       "en" : "A person having managerial and sometimes policy-making responsibility for the editorial part of a publishing firm or of a newspaper, magazine, or other publication."
     },
@@ -11666,7 +11690,7 @@
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/firstName",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "426",
+    "range" : "427",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -11699,7 +11723,7 @@
     "comment" : {
       "undefined" : "The first name of a person."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "486"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#relatedMatch",
@@ -11735,8 +11759,8 @@
     },
     "superproperty" : [ "14", "15" ],
     "domain" : "34",
-    "attributes" : [ "symmetric", "external", "object" ],
-    "id" : "422"
+    "attributes" : [ "external", "symmetric", "object" ],
+    "id" : "423"
   }, {
     "iri" : "http://purl.org/NET/c4dm/event.owl#product",
     "baseIri" : "http://purl.org/NET/c4dm/event.owl",
@@ -11758,14 +11782,14 @@
       "IRI-based" : "product"
     },
     "domain" : "34",
-    "subproperty" : [ "353" ],
+    "subproperty" : [ "354" ],
     "attributes" : [ "external", "object" ],
-    "id" : "354"
+    "id" : "355"
   }, {
     "iri" : "http://purl.org/ontology/bibo/pageEnd",
     "equivalent" : [ "488" ],
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "401",
+    "range" : "402",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -11798,7 +11822,7 @@
     "comment" : {
       "en" : "Ending page number within a continuous page range."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "487"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
@@ -11839,7 +11863,7 @@
   }, {
     "iri" : "http://purl.org/linked-data/cube#order",
     "baseIri" : "http://purl.org/linked-data/cube",
-    "range" : "389",
+    "range" : "390",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -11861,7 +11885,7 @@
     "comment" : {
       "en" : "indicates a priority order for the components of sets with this structure, used to guide presentations - lower order numbers come before higher numbers, un-numbered components come last"
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "489"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/plan",
@@ -11899,7 +11923,7 @@
     "comment" : {
       "undefined" : "A .plan comment, in the tradition of finger and '.plan' files."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "490"
   }, {
     "iri" : "http://purl.org/dc/terms/rights",
@@ -12019,7 +12043,7 @@
       "IRI-based" : "producer",
       "en" : "producer"
     },
-    "domain" : "260",
+    "domain" : "261",
     "comment" : {
       "en" : "Producer of a document or a collection of documents."
     },
@@ -12046,7 +12070,7 @@
       "IRI-based" : "observation",
       "en" : "observation"
     },
-    "domain" : "429",
+    "domain" : "430",
     "comment" : {
       "en" : "indicates a observation contained within this slice of the data set"
     },
@@ -12078,7 +12102,7 @@
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#member",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
-    "range" : "388",
+    "range" : "389",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -12146,7 +12170,7 @@
     "comment" : {
       "undefined" : "The sha1sum of the URI of an Internet mailbox associated with exactly one owner, the  first owner of the mailbox."
     },
-    "attributes" : [ "external", "inverse functional", "object" ],
+    "attributes" : [ "inverse functional", "external", "object" ],
     "id" : "498"
   }, {
     "iri" : "http://purl.org/ontology/bibo/issuer",
@@ -12180,13 +12204,13 @@
       "IRI-based" : "issuer",
       "undefined" : "issuer"
     },
-    "superproperty" : [ "271" ],
-    "domain" : "332",
+    "superproperty" : [ "272" ],
+    "domain" : "333",
     "comment" : {
       "undefined" : "An entity responsible for issuing often informally published documents such as press releases, reports, etc."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "272"
+    "id" : "273"
   }, {
     "iri" : "http://purl.org/ontology/bibo/sici",
     "baseIri" : "http://purl.org/ontology/bibo",
@@ -12195,7 +12219,7 @@
       "IRI-based" : "sici"
     },
     "domain" : "448",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "499"
   }, {
     "iri" : "http://purl.org/NET/c4dm/event.owl#time",
@@ -12221,49 +12245,49 @@
     "attributes" : [ "external", "object" ],
     "id" : "500"
   }, {
-    "range" : "391",
+    "range" : "392",
     "domain" : "117",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "501"
   }, {
     "range" : "42",
-    "domain" : "409",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "410",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "502"
   }, {
-    "range" : "429",
+    "range" : "430",
     "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "503"
   }, {
-    "range" : "300",
+    "range" : "301",
     "domain" : "163",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "504"
   }, {
-    "range" : "378",
+    "range" : "379",
     "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "505"
   }, {
     "range" : "37",
     "domain" : "439",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "506"
   }, {
     "range" : "37",
     "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "507"
   }, {
     "range" : "50",
     "domain" : "122",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "508"
   }, {
     "iri" : "http://purl.org/ontology/bibo/number",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "402",
+    "range" : "403",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -12296,22 +12320,22 @@
     "comment" : {
       "en" : "A generic item or document number. Not to be confused with issue number."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "509"
   }, {
     "range" : "50",
-    "domain" : "283",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "284",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "510"
   }, {
-    "range" : "285",
+    "range" : "286",
     "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "511"
   }, {
-    "range" : "298",
+    "range" : "299",
     "domain" : "98",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "512"
   }, {
     "iri" : "http://purl.org/dc/terms/isReferencedBy",
@@ -12334,13 +12358,13 @@
       "IRI-based" : "isReferencedBy"
     },
     "domain" : "34",
-    "subproperty" : [ "274" ],
+    "subproperty" : [ "275" ],
     "attributes" : [ "external", "object" ],
     "id" : "513"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/focus",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "294",
+    "range" : "295",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -12417,7 +12441,7 @@
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/geekcode",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "423",
+    "range" : "424",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -12450,12 +12474,12 @@
     "comment" : {
       "undefined" : "A textual geekcode for this person, see http://www.geekcode.com/geek.html"
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "516"
   }, {
     "iri" : "http://purl.org/linked-data/cube#hierarchyRoot",
     "baseIri" : "http://purl.org/linked-data/cube",
-    "range" : "277",
+    "range" : "278",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -12510,7 +12534,7 @@
       "IRI-based" : "performer",
       "undefined" : "performer"
     },
-    "superproperty" : [ "365" ],
+    "superproperty" : [ "366" ],
     "domain" : "87",
     "attributes" : [ "external", "object" ],
     "id" : "470"
@@ -12553,14 +12577,14 @@
     "attributes" : [ "external", "object" ],
     "id" : "518"
   }, {
-    "range" : "290",
-    "domain" : "293",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "291",
+    "domain" : "294",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "519"
   }, {
-    "range" : "286",
-    "domain" : "325",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "287",
+    "domain" : "326",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "520"
   }, {
     "iri" : "http://purl.org/ontology/bibo/translationOf",
@@ -12594,13 +12618,13 @@
       "IRI-based" : "translationOf",
       "en" : "translation of"
     },
-    "superproperty" : [ "323" ],
+    "superproperty" : [ "324" ],
     "domain" : "32",
     "comment" : {
       "en" : "Relates a translated document to the original document."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "324"
+    "id" : "325"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/lastName",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -12637,32 +12661,32 @@
     "comment" : {
       "undefined" : "The last name of a person."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "521"
   }, {
     "range" : "51",
-    "domain" : "327",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "328",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "522"
   }, {
-    "range" : "291",
+    "range" : "292",
     "domain" : "63",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "523"
   }, {
-    "range" : "291",
-    "domain" : "290",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "292",
+    "domain" : "291",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "524"
   }, {
     "range" : "43",
     "domain" : "131",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "525"
   }, {
     "range" : "43",
-    "domain" : "379",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "380",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "526"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/status",
@@ -12700,27 +12724,27 @@
     "comment" : {
       "undefined" : "A string expressing what the user is happy for the general public (normally) to know about their current activity."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "527"
   }, {
     "range" : "88",
     "domain" : "70",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "528"
   }, {
-    "range" : "298",
+    "range" : "299",
     "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "529"
   }, {
     "range" : "6",
     "domain" : "142",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "530"
   }, {
-    "range" : "290",
-    "domain" : "292",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "291",
+    "domain" : "293",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "531"
   }, {
     "iri" : "http://purl.org/ontology/bibo/upc",
@@ -12730,53 +12754,53 @@
       "IRI-based" : "upc"
     },
     "domain" : "437",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "532"
   }, {
     "iri" : "http://prismstandard.org/namespaces/1.2/basic/volume",
     "equivalent" : [ "443" ],
     "baseIri" : "http://prismstandard.org/namespaces/1.2/basic",
-    "range" : "278",
+    "range" : "279",
     "label" : {
       "IRI-based" : "volume"
     },
     "domain" : "34",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "444"
   }, {
     "iri" : "http://purl.org/ontology/bibo/handle",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "362",
+    "range" : "363",
     "label" : {
       "IRI-based" : "handle"
     },
-    "domain" : "360",
-    "attributes" : [ "datatype", "external" ],
+    "domain" : "361",
+    "attributes" : [ "external", "datatype" ],
     "id" : "533"
   }, {
     "range" : "30",
-    "domain" : "225",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "222",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "534"
   }, {
     "range" : "30",
-    "domain" : "226",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "223",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "535"
   }, {
     "range" : "30",
-    "domain" : "227",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "224",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "537"
   }, {
     "range" : "30",
     "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "538"
   }, {
     "range" : "30",
-    "domain" : "228",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "225",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "539"
   }, {
     "iri" : "http://purl.org/dc/terms/isPartOf",
@@ -12787,13 +12811,13 @@
     },
     "maxCardinality" : "1",
     "domain" : "34",
-    "subproperty" : [ "250" ],
+    "subproperty" : [ "251" ],
     "attributes" : [ "external", "object" ],
-    "id" : "251"
+    "id" : "252"
   }, {
     "range" : "41",
-    "domain" : "286",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "287",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "540"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/accountServiceHomepage",
@@ -12869,22 +12893,22 @@
     "comment" : {
       "undefined" : "A logo representing some thing."
     },
-    "attributes" : [ "external", "inverse functional", "object" ],
+    "attributes" : [ "inverse functional", "external", "object" ],
     "id" : "542"
   }, {
     "range" : "41",
     "domain" : "135",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "543"
   }, {
     "range" : "41",
-    "domain" : "287",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "288",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "544"
   }, {
     "range" : "141",
     "domain" : "142",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "545"
   }, {
     "iri" : "http://purl.org/linked-data/cube#concept",
@@ -12916,44 +12940,44 @@
   }, {
     "range" : "150",
     "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "547"
   }, {
     "range" : "221",
     "domain" : "131",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "548"
   }, {
     "iri" : "http://purl.org/ontology/bibo/issn",
-    "equivalent" : [ "430" ],
+    "equivalent" : [ "431" ],
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "418",
+    "range" : "419",
     "label" : {
       "IRI-based" : "issn"
     },
     "domain" : "117",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "431"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "432"
   }, {
     "iri" : "http://prismstandard.org/namespaces/1.2/basic/endingPage",
     "equivalent" : [ "487" ],
     "baseIri" : "http://prismstandard.org/namespaces/1.2/basic",
-    "range" : "263",
+    "range" : "264",
     "label" : {
       "IRI-based" : "endingPage"
     },
     "domain" : "34",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "488"
   }, {
     "iri" : "http://purl.org/ontology/bibo/identifier",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "421",
+    "range" : "422",
     "label" : {
       "IRI-based" : "identifier"
     },
-    "domain" : "361",
-    "attributes" : [ "datatype", "external" ],
+    "domain" : "362",
+    "attributes" : [ "external", "datatype" ],
     "id" : "549"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/accountName",
@@ -12991,12 +13015,12 @@
     "comment" : {
       "undefined" : "Indicates the name (identifier) associated with this online account."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "550"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/jabberID",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "4",
+    "range" : "425",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -13025,11 +13049,11 @@
       "IRI-based" : "jabberID",
       "undefined" : "jabber ID"
     },
-    "domain" : "111",
+    "domain" : "34",
     "comment" : {
       "undefined" : "A jabber ID for something."
     },
-    "attributes" : [ "external", "inverse functional", "object" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "551"
   }, {
     "iri" : "http://purl.org/ontology/bibo/subsequentLegalDecision",
@@ -13053,37 +13077,37 @@
     },
     "superproperty" : [ "513" ],
     "domain" : "121",
-    "subproperty" : [ "412", "273" ],
+    "subproperty" : [ "413", "274" ],
     "comment" : {
       "en" : "A legal decision on appeal that takes action on a case (affirming it, reversing it, etc.)."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "274"
+    "id" : "275"
   }, {
     "range" : "32",
     "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "552"
   }, {
     "iri" : "http://purl.org/ontology/bibo/doi",
-    "equivalent" : [ "410" ],
+    "equivalent" : [ "411" ],
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "375",
+    "range" : "376",
     "label" : {
       "IRI-based" : "doi"
     },
-    "domain" : "376",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "411"
+    "domain" : "377",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "412"
   }, {
     "range" : "32",
     "domain" : "53",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "553"
   }, {
     "iri" : "http://purl.org/ontology/bibo/annotates",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "303",
+    "range" : "304",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -13122,17 +13146,17 @@
   }, {
     "range" : "32",
     "domain" : "54",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "554"
   }, {
     "range" : "32",
     "domain" : "55",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "555"
   }, {
     "range" : "78",
     "domain" : "79",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "556"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/homepage",
@@ -13182,22 +13206,22 @@
     "comment" : {
       "undefined" : "A homepage for some thing."
     },
-    "attributes" : [ "external", "inverse functional", "object" ],
+    "attributes" : [ "inverse functional", "external", "object" ],
     "id" : "146"
   }, {
     "range" : "78",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "557"
   }, {
     "range" : "78",
     "domain" : "81",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "558"
   }, {
     "iri" : "http://purl.org/ontology/bibo/section",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "393",
+    "range" : "394",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -13241,7 +13265,7 @@
     "comment" : {
       "en" : "A section number"
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "559"
   }, {
     "iri" : "http://purl.org/linked-data/cube#structure",
@@ -13273,7 +13297,7 @@
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/msnChatID",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "4",
+    "range" : "462",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -13302,11 +13326,11 @@
       "IRI-based" : "msnChatID",
       "undefined" : "MSN chat ID"
     },
-    "domain" : "111",
+    "domain" : "34",
     "comment" : {
       "undefined" : "An MSN chat ID"
     },
-    "attributes" : [ "external", "inverse functional", "object" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "561"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/topic_interest",
@@ -13349,7 +13373,7 @@
   }, {
     "iri" : "http://purl.org/linked-data/cube#observationGroup",
     "baseIri" : "http://purl.org/linked-data/cube",
-    "range" : "429",
+    "range" : "430",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -13367,17 +13391,17 @@
       "IRI-based" : "observationGroup",
       "en" : "observation group"
     },
-    "domain" : "264",
-    "subproperty" : [ "368" ],
+    "domain" : "265",
+    "subproperty" : [ "369" ],
     "comment" : {
       "en" : "Indicates a group of observations. The domain of this property is left open so that a group may be attached to different resources and need not be restricted to a single DataSet"
     },
     "attributes" : [ "external", "object" ],
-    "id" : "369"
+    "id" : "370"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/currentProject",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "288",
+    "range" : "289",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -13448,7 +13472,7 @@
     "comment" : {
       "undefined" : "The birthday of this Agent, represented in mm-dd string form, eg. '12-31'."
     },
-    "attributes" : [ "functional", "datatype", "external" ],
+    "attributes" : [ "external", "datatype", "functional" ],
     "id" : "565"
   }, {
     "iri" : "http://purl.org/ontology/bibo/owner",
@@ -13482,7 +13506,7 @@
       "IRI-based" : "owner",
       "en" : "owner"
     },
-    "domain" : "328",
+    "domain" : "329",
     "comment" : {
       "en" : "Owner of a document or a collection of documents."
     },
@@ -13491,17 +13515,17 @@
   }, {
     "iri" : "http://purl.org/ontology/bibo/asin",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "385",
+    "range" : "386",
     "label" : {
       "IRI-based" : "asin"
     },
-    "domain" : "383",
-    "attributes" : [ "datatype", "external" ],
+    "domain" : "384",
+    "attributes" : [ "external", "datatype" ],
     "id" : "567"
   }, {
     "iri" : "http://purl.org/dc/terms/hasPart",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "283",
+    "range" : "284",
     "label" : {
       "IRI-based" : "hasPart"
     },
@@ -13525,7 +13549,7 @@
     "label" : {
       "IRI-based" : "hasPart"
     },
-    "domain" : "225",
+    "domain" : "222",
     "attributes" : [ "allValues", "external", "object" ],
     "id" : "570"
   }, {
@@ -13545,7 +13569,7 @@
     "label" : {
       "IRI-based" : "hasPart"
     },
-    "domain" : "228",
+    "domain" : "225",
     "attributes" : [ "allValues", "external", "object" ],
     "id" : "572"
   }, {
@@ -13555,7 +13579,7 @@
     "label" : {
       "IRI-based" : "hasPart"
     },
-    "domain" : "226",
+    "domain" : "223",
     "attributes" : [ "allValues", "external", "object" ],
     "id" : "573"
   }, {
@@ -13575,29 +13599,29 @@
     "label" : {
       "IRI-based" : "hasPart"
     },
-    "domain" : "227",
+    "domain" : "224",
     "attributes" : [ "allValues", "external", "object" ],
     "id" : "575"
   }, {
     "range" : "25",
     "domain" : "210",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "576"
   }, {
     "iri" : "http://purl.org/ontology/bibo/eissn",
-    "equivalent" : [ "371" ],
+    "equivalent" : [ "372" ],
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "370",
+    "range" : "371",
     "label" : {
       "IRI-based" : "eissn"
     },
     "domain" : "117",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "372"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "373"
   }, {
     "range" : "25",
     "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "577"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/member",
@@ -13696,7 +13720,7 @@
     "comment" : {
       "undefined" : "A  personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that  there is (across time and change) at most one individual that ever has any particular value for foaf:mbox."
     },
-    "attributes" : [ "external", "inverse functional", "object" ],
+    "attributes" : [ "inverse functional", "external", "object" ],
     "id" : "581"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/surname",
@@ -13734,12 +13758,12 @@
     "comment" : {
       "undefined" : "The surname of some person."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "582"
   }, {
     "iri" : "http://purl.org/ontology/bibo/numVolumes",
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "403",
+    "range" : "404",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -13772,7 +13796,7 @@
     "comment" : {
       "en" : "The number of volumes contained in a collection of documents (usually a series, periodical, etc.)."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "583"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/maker",
@@ -13811,18 +13835,18 @@
       "undefined" : "An agent that  made this thing."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "270"
+    "id" : "271"
   }, {
     "iri" : "http://prismstandard.org/namespaces/1.2/basic/isbn",
-    "equivalent" : [ "366" ],
+    "equivalent" : [ "367" ],
     "baseIri" : "http://prismstandard.org/namespaces/1.2/basic",
-    "range" : "254",
+    "range" : "255",
     "label" : {
       "IRI-based" : "isbn"
     },
     "domain" : "34",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "367"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "368"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
@@ -13875,7 +13899,7 @@
     "iri" : "http://purl.org/ontology/bibo/locator",
     "equivalent" : [ "474" ],
     "baseIri" : "http://purl.org/ontology/bibo",
-    "range" : "408",
+    "range" : "409",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -13908,7 +13932,7 @@
     "comment" : {
       "en" : "A description (often numeric) that locates an item within a containing document or collection."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "475"
   } ]
 }

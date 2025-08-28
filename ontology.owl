@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://kg.odissei.nl/odissei/odissei-kg"
-     xml:base="https://w3id.org/sshoc-nl-ontology"
+<rdf:RDF xmlns="https://kg.odissei.nl/odissei/odissei-kg#"
+     xml:base="https://kg.odissei.nl/odissei/odissei-kg"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -21,10 +21,10 @@
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/csvw"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <dc:title xml:lang="en">SSHOC-NL Ontology</dc:title>
         <vann:preferredNamespacePrefix>sshoc-nl-ontology</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://kg.odissei.nl/odissei/odissei-kg</vann:preferredNamespaceUri>
-          <dc:title xml:lang="en">SSHOC-NL Ontology</dc:title>
-          <rdfs:comment>This is the ontology documentation for the SSHOC-NL Knowledge Graph, available at https://kg.odissei.nl/.
+        <rdfs:comment>This is the ontology documentation for the SSHOC-NL Knowledge Graph, available at https://kg.odissei.nl/.
      
           This ontology serves as a conceptual framework designed to structure and formalize knowledge within the Dutch social sciences and humanities research landscape. It is a key component of the SSH Open Cloud (SSHOC) project, a European initiative aimed at creating a cloud-based infrastructure for researchers.
           
@@ -5104,10 +5104,25 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
         <foaf:mbox>dave@epimorphics.com</foaf:mbox>
     </rdf:Description>
     <rdf:Description>
+        <foaf:mbox>ian@epimorphics.com</foaf:mbox>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:mbox>dave@epimorphics.com</foaf:mbox>
+    </rdf:Description>
+    <rdf:Description>
         <foaf:mbox>arofan.gregory@earthlink.net</foaf:mbox>
     </rdf:Description>
     <rdf:Description>
         <foaf:mbox>ian@epimorphics.com</foaf:mbox>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:mbox>richard@cyganiak.de</foaf:mbox>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:mbox>jeni@jenitennison.com</foaf:mbox>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:mbox>arofan.gregory@earthlink.net</foaf:mbox>
     </rdf:Description>
     <rdf:Description>
         <foaf:mbox>dave@epimorphics.com</foaf:mbox>

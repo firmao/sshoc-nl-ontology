@@ -105,27 +105,47 @@
 }, {
   "@id" : "_:genid111",
   "http://xmlns.com/foaf/0.1/mbox" : [ {
-    "@value" : "arofan.gregory@earthlink.net"
+    "@value" : "ian@epimorphics.com"
   } ]
 }, {
   "@id" : "_:genid112",
   "http://xmlns.com/foaf/0.1/mbox" : [ {
-    "@value" : "ian@epimorphics.com"
+    "@value" : "dave@epimorphics.com"
   } ]
 }, {
   "@id" : "_:genid113",
   "http://xmlns.com/foaf/0.1/mbox" : [ {
-    "@value" : "dave@epimorphics.com"
+    "@value" : "arofan.gregory@earthlink.net"
   } ]
 }, {
   "@id" : "_:genid114",
   "http://xmlns.com/foaf/0.1/mbox" : [ {
-    "@value" : "richard@cyganiak.de"
+    "@value" : "ian@epimorphics.com"
   } ]
 }, {
   "@id" : "_:genid115",
   "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "richard@cyganiak.de"
+  } ]
+}, {
+  "@id" : "_:genid116",
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
     "@value" : "jeni@jenitennison.com"
+  } ]
+}, {
+  "@id" : "_:genid117",
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "arofan.gregory@earthlink.net"
+  } ]
+}, {
+  "@id" : "_:genid118",
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "dave@epimorphics.com"
+  } ]
+}, {
+  "@id" : "_:genid119",
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "richard@cyganiak.de"
   } ]
 }, {
   "@id" : "_:genid12",
@@ -137,6 +157,11 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+  } ]
+}, {
+  "@id" : "_:genid120",
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "jeni@jenitennison.com"
   } ]
 }, {
   "@id" : "_:genid13",
@@ -7317,6 +7342,35 @@
   "@id" : "https://kg.odissei.nl/.well-known/genid/fcc0f7551e4ea9e43bb974b8eca261a6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "https://kg.odissei.nl/odissei/odissei-kg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "SSHOC-NL Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "sshoc-nl-ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://kg.odissei.nl/odissei/odissei-kg"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This is the ontology documentation for the SSHOC-NL Knowledge Graph, available at https://kg.odissei.nl/.\n     \n          This ontology serves as a conceptual framework designed to structure and formalize knowledge within the Dutch social sciences and humanities research landscape. It is a key component of the SSH Open Cloud (SSHOC) project, a European initiative aimed at creating a cloud-based infrastructure for researchers.\n          \n          The primary purpose of the SSHOC-NL Ontology is to provide a common vocabulary and set of relationships for describing research-related entities, such as academic articles, books, datasets, and various types of statistical data. By using this standardized, machine-readable format, the ontology facilitates:\n          \n          - Interoperability: It allows different systems and platforms to understand and exchange data about research outputs consistently.\n          \n          - Discoverability: Researchers can more easily find and access relevant resources by navigating the structured relationships defined in the ontology.\n          \n          - Knowledge Representation: It creates a rich, interconnected knowledge graph of Dutch social science and humanities research, which can be queried and analyzed in sophisticated ways.\n          \n          In essence, the SSHOC-NL Ontology translates the complex, nuanced world of scholarly information into a structured model, making it more accessible and useful for both human users and automated systems.\n          \n          "
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://purl.org/NET/c4dm/event.owl#"
+  }, {
+    "@id" : "http://purl.org/linked-data/cube"
+  }, {
+    "@id" : "http://purl.org/ontology/bibo/"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#"
+  }, {
+    "@id" : "http://www.w3.org/ns/csvw"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/"
+  } ]
+}, {
   "@id" : "https://schema.org/ResearchProject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -7334,28 +7388,6 @@
 }, {
   "@id" : "https://terms.codata.org/rdmt/research-software",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/dsv-ontology",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
-    "@value" : "dsv-ontology"
-  } ],
-  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@value" : "https://w3id.org/dsv-ontology#"
-  } ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#"
-  }, {
-    "@id" : "http://purl.org/linked-data/cube"
-  }, {
-    "@id" : "http://purl.org/ontology/bibo/"
-  }, {
-    "@id" : "http://www.w3.org/2004/02/skos/core#"
-  }, {
-    "@id" : "http://www.w3.org/ns/csvw"
-  }, {
-    "@id" : "http://xmlns.com/foaf/0.1/"
-  } ]
 }, {
   "@id" : "https://w3id.org/dsv-ontology#CategoricalDataType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
