@@ -139,7 +139,7 @@ def fetch_json_from_url(url):
 
 if __name__ == "__main__":
     # Replace this URL with the actual URL of your ontology JSON file
-    ontology_url = "https://github.com/firmao/sshoc-nl-ontology/raw/refs/heads/main/onto,json"
+    ontology_url = "https://github.com/firmao/sshoc-nl-ontology/raw/refs/heads/main/sshoc-pre-onto.json"
     output_filename = "ontologyGenerated.owl"
 
     data = fetch_json_from_url(ontology_url)
