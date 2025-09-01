@@ -217,7 +217,7 @@ app.layout = dbc.Container(
                                     id='uri-input',
                                     type='text',
                                     placeholder="Enter SPARQL endpoint or OWL file URI...",
-                                    value="https://api.kg.odissei.nl/datasets/odissei/odissei-kg/services/odissei-virtuoso/sparql",
+                                    value="https://github.com/firmao/sshoc-nl-ontology/raw/refs/heads/main/sshoc-onlyClassesWithIntances/ontology.owl",
                                 ),
                                 dbc.Button("Load Graph", id="load-button", color="primary"),
                             ],
